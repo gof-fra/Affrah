@@ -1,32 +1,14 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
-
-<spring:url var="css" value="/resources/css" />
-<spring:url var="js" value="/resources/js" />
-<spring:url var="images" value="/resources/images" />
-
-<%@ include file="about.html" %>
-<%@ include file="checkout.html" %>
-<%@ include file="contact.html" %>
-<%@ include file="faqs.html" %>
-<%@ include file="help.html" %>
-<%@ include file="payment.html" %>
-<%@ include file="privacy.html" %>
-<%@ include file="product.html" %>
-<%@ include file="product2.html" %>
-<%@ include file="single.html" %>
-<%@ include file="terms.html" %>
-
-
-
-<c:set var="contextRoot" value="${pageContext.request.contextPath}" />
-
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
 <!DOCTYPE html>
 <html lang="zxx">
 
 <head>
-	<title>Affrah</title>
+	<title>Affrah </title>
 	<!-- Meta tag Keywords -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8" />
@@ -44,15 +26,15 @@
 	<!-- //Meta tag Keywords -->
 
 	<!-- Custom-Files -->
-	<link href="${css}/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 	<!-- Bootstrap css -->
-	<link href="${css}/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 	<!-- Main css -->
 	<link rel="stylesheet" href="css/fontawesome-all.css">
 	<!-- Font-Awesome-Icons-CSS -->
-	<link href="${css}/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
 	<!-- pop-up-box -->
-	<link href="${css}/menu.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/menu.css" rel="stylesheet" type="text/css" media="all" />
 	<!-- menu style -->
 	<!-- //Custom-Files -->
 
@@ -63,53 +45,6 @@
 	<!-- //web fonts -->
 
 </head>
-
-<body>
-<script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script><script src="//m.servedby-buysellads.com/monetization.js" type="text/javascript"></script>
-<script>
-(function(){
-	if(typeof _bsa !== 'undefined' && _bsa) {
-  		// format, zoneKey, segment:value, options
-  		_bsa.init('flexbar', 'CKYI627U', 'placement:w3layoutscom');
-  	}
-})();
-</script>
-<script>
-(function(){
-if(typeof _bsa !== 'undefined' && _bsa) {
-	// format, zoneKey, segment:value, options
-	_bsa.init('fancybar', 'CKYDL2JN', 'placement:demo');
-}
-})();
-</script>
-<script>
-(function(){
-	if(typeof _bsa !== 'undefined' && _bsa) {
-  		// format, zoneKey, segment:value, options
-  		_bsa.init('stickybox', 'CKYI653J', 'placement:w3layoutscom');
-  	}
-})();
-</script>
-<script>
-	(function(v,d,o,ai){ai=d.createElement("script");ai.defer=true;ai.async=true;ai.src=v.location.protocol+o;d.head.appendChild(ai);})(window, document, "//vdo.ai/core/w3layouts/vdo.ai.js");
-	</script>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125810435-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-125810435-1');
-</script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-ga('create', 'UA-30027142-1', 'w3layouts.com');
-  ga('send', 'pageview');
-</script>
 
 <body>
 	<!-- top-header -->
@@ -133,7 +68,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 								<i class="fas fa-truck mr-2"></i>Track Order</a>
 						</li>
 						<li class="text-center border-right text-white">
-							<i class="fas fa-phone mr-2"></i> 001 234 5678
+							<i class="fas fa-phone mr-2"></i> 66213150
 						</li>
 						<li class="text-center border-right text-white">
 							<a href="#" data-toggle="modal" data-target="#exampleModal" class="text-white">
@@ -285,7 +220,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 				<div class="col-md-3 logo_agile">
 					<h1 class="text-center">
 						<a href="index.html" class="font-weight-bold font-italic">
-							<img src="${images}/logo2.png" alt=" " class="img-fluid">Electro Store
+							<img src="images/logo2.png" alt=" " class="img-fluid">Affrah Shop
 						</a>
 					</h1>
 				</div>
@@ -515,8 +450,11 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 								<a class="dropdown-item" href="payment.html">Payment Page</a>
 							</div>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item border-right">
 							<a class="nav-link" href="contact.html">Contact Us</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Register</a>
 						</li>
 					</ul>
 				</div>
@@ -603,7 +541,6 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 		</a>
 	</div>
 	<!-- //banner -->
-	<!---728x90--->
 
 	<!-- top Products -->
 	<div class="ads-grid py-sm-5 py-4">
@@ -625,7 +562,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 								<div class="col-md-4 product-men mt-5">
 									<div class="men-pro-item simpleCart_shelfItem">
 										<div class="men-thumb-item text-center">
-											<img src="${images}/m1.jpg" alt="">
+											<img src="images/m1.jpg" alt="">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
 													<a href="single.html" class="link-product-add-cart">Quick View</a>
@@ -662,7 +599,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 								<div class="col-md-4 product-men mt-5">
 									<div class="men-pro-item simpleCart_shelfItem">
 										<div class="men-thumb-item text-center">
-											<img src="${images}/m2.jpg" alt="">
+											<img src="images/m2.jpg" alt="">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
 													<a href="single.html" class="link-product-add-cart">Quick View</a>
@@ -702,7 +639,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 								<div class="col-md-4 product-men mt-5">
 									<div class="men-pro-item simpleCart_shelfItem">
 										<div class="men-thumb-item text-center">
-											<img src="${images}/m3.jpg" alt="">
+											<img src="images/m3.jpg" alt="">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
 													<a href="single.html" class="link-product-add-cart">Quick View</a>
@@ -748,7 +685,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 								<div class="col-md-4 product-men mt-5">
 									<div class="men-pro-item simpleCart_shelfItem">
 										<div class="men-thumb-item text-center">
-											<img src="${images}/m4.jpg" alt="">
+											<img src="images/m4.jpg" alt="">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
 													<a href="single.html" class="link-product-add-cart">Quick View</a>
@@ -785,7 +722,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 								<div class="col-md-4 product-men mt-5">
 									<div class="men-pro-item simpleCart_shelfItem">
 										<div class="men-thumb-item text-center">
-											<img src="${images}/m5.jpg" alt="">
+											<img src="images/m5.jpg" alt="">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
 													<a href="single.html" class="link-product-add-cart">Quick View</a>
@@ -825,7 +762,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 								<div class="col-md-4 product-men mt-5">
 									<div class="men-pro-item simpleCart_shelfItem">
 										<div class="men-thumb-item text-center">
-											<img src="${images}/m6.jpg" alt="">
+											<img src="images/m6.jpg" alt="">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
 													<a href="single.html" class="link-product-add-cart">Quick View</a>
@@ -862,138 +799,6 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 							</div>
 						</div>
 						<!-- //second section -->
-						<!-- third section -->
-						<div class="product-sec1 product-sec2 px-sm-5 px-3">
-							<div class="row">
-								<h3 class="col-md-4 effect-bg">Summer Carnival</h3>
-								<p class="w3l-nut-middle">Get Extra 10% Off</p>
-								<div class="col-md-8 bg-right-nut">
-									<img src="${images}/image1.png" alt="">
-								</div>
-							</div>
-						</div>
-						<!-- //third section -->
-						<!-- fourth section -->
-						<div class="product-sec1 px-sm-4 px-3 py-sm-5  py-3 mt-4">
-							<h3 class="heading-tittle text-center font-italic">Large Appliances</h3>
-							<div class="row">
-								<div class="col-md-4 product-men mt-5">
-									<div class="men-pro-item simpleCart_shelfItem">
-										<div class="men-thumb-item text-center">
-											<img src="${images}/m7.jpg" alt="">
-											<div class="men-cart-pro">
-												<div class="inner-men-cart-pro">
-													<a href="single.html" class="link-product-add-cart">Quick View</a>
-												</div>
-											</div>
-										</div>
-										<span class="product-new-top">New</span>
-										<div class="item-info-product text-center border-top mt-4">
-											<h4 class="pt-1">
-												<a href="single.html">Whirlpool 245</a>
-											</h4>
-											<div class="info-product-price my-2">
-												<span class="item_price">$230.00</span>
-												<del>$280.00</del>
-											</div>
-											<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-												<form action="#" method="post">
-													<fieldset>
-														<input type="hidden" name="cmd" value="_cart" />
-														<input type="hidden" name="add" value="1" />
-														<input type="hidden" name="business" value=" " />
-														<input type="hidden" name="item_name" value="Whirlpool 245" />
-														<input type="hidden" name="amount" value="230.00" />
-														<input type="hidden" name="discount_amount" value="1.00" />
-														<input type="hidden" name="currency_code" value="USD" />
-														<input type="hidden" name="return" value=" " />
-														<input type="hidden" name="cancel_return" value=" " />
-														<input type="submit" name="submit" value="Add to cart" class="button btn" />
-													</fieldset>
-												</form>
-											</div>
-
-										</div>
-									</div>
-								</div>
-								<div class="col-md-4 product-men mt-5">
-									<div class="men-pro-item simpleCart_shelfItem">
-										<div class="men-thumb-item text-center">
-											<img src="${images}/m8.jpg" alt="">
-											<div class="men-cart-pro">
-												<div class="inner-men-cart-pro">
-													<a href="single.html" class="link-product-add-cart">Quick View</a>
-												</div>
-											</div>
-										</div>
-										<div class="item-info-product text-center border-top mt-4">
-											<h4 class="pt-1">
-												<a href="single.html">BPL Washing Machine</a>
-											</h4>
-											<div class="info-product-price my-2">
-												<span class="item_price">$180.00</span>
-												<del>$200.00</del>
-											</div>
-											<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-												<form action="#" method="post">
-													<fieldset>
-														<input type="hidden" name="cmd" value="_cart" />
-														<input type="hidden" name="add" value="1" />
-														<input type="hidden" name="business" value=" " />
-														<input type="hidden" name="item_name" value="BPL Washing Machine" />
-														<input type="hidden" name="amount" value="180.00" />
-														<input type="hidden" name="discount_amount" value="1.00" />
-														<input type="hidden" name="currency_code" value="USD" />
-														<input type="hidden" name="return" value=" " />
-														<input type="hidden" name="cancel_return" value=" " />
-														<input type="submit" name="submit" value="Add to cart" class="button btn" />
-													</fieldset>
-												</form>
-											</div>
-
-										</div>
-									</div>
-								</div>
-								<div class="col-md-4 product-men mt-5">
-									<div class="men-pro-item simpleCart_shelfItem">
-										<div class="men-thumb-item text-center">
-											<img src="${images}/m9.jpg" alt="">
-											<div class="men-cart-pro">
-												<div class="inner-men-cart-pro">
-													<a href="single.html" class="link-product-add-cart">Quick View</a>
-												</div>
-											</div>
-										</div>
-										<div class="item-info-product text-center border-top mt-4">
-											<h4 class="pt-1">
-												<a href="single.html">Microwave Oven</a>
-											</h4>
-											<div class="info-product-price my-2">
-												<span class="item_price">$199.00</span>
-												<del>$299.00</del>
-											</div>
-											<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-												<form action="#" method="post">
-													<fieldset>
-														<input type="hidden" name="cmd" value="_cart" />
-														<input type="hidden" name="add" value="1" />
-														<input type="hidden" name="business" value=" " />
-														<input type="hidden" name="item_name" value="Microwave Oven" />
-														<input type="hidden" name="amount" value="199.00" />
-														<input type="hidden" name="discount_amount" value="1.00" />
-														<input type="hidden" name="currency_code" value="USD" />
-														<input type="hidden" name="return" value=" " />
-														<input type="hidden" name="cancel_return" value=" " />
-														<input type="submit" name="submit" value="Add to cart" class="button btn" />
-													</fieldset>
-												</form>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- //fourth section -->
 					</div>
 				</div>
 				<!-- //product left -->
@@ -1070,25 +875,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 						<div class="customer-rev border-bottom left-side py-2">
 							<h3 class="agileits-sear-head mb-3">Customer Review</h3>
 							<ul>
-								<li>
-									<a href="#">
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<span>5.0</span>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<i class="fas fa-star"></i>
-										<span>4.0</span>
-									</a>
-								</li>
+							
 								<li>
 									<a href="#">
 										<i class="fas fa-star"></i>
@@ -1176,68 +963,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 							</ul>
 						</div>
 						<!-- //electronics -->
-						<!-- delivery -->
-						<div class="left-side border-bottom py-2">
-							<h3 class="agileits-sear-head mb-3">Cash On Delivery</h3>
-							<ul>
-								<li>
-									<input type="checkbox" class="checked">
-									<span class="span">Eligible for Cash On Delivery</span>
-								</li>
-							</ul>
-						</div>
-						<!-- //delivery -->
-						<!-- arrivals -->
-						<div class="left-side border-bottom py-2">
-							<h3 class="agileits-sear-head mb-3">New Arrivals</h3>
-							<ul>
-								<li>
-									<input type="checkbox" class="checked">
-									<span class="span">Last 30 days</span>
-								</li>
-								<li>
-									<input type="checkbox" class="checked">
-									<span class="span">Last 90 days</span>
-								</li>
-							</ul>
-						</div>
-						<!-- //arrivals -->
-						<!-- best seller -->
-						<div class="f-grid py-2">
-							<h3 class="agileits-sear-head mb-3">Best Seller</h3>
-							<div class="box-scroll">
-								<div class="scroll">
-									<div class="row">
-										<div class="col-lg-3 col-sm-2 col-3 left-mar">
-											<img src="${images}/k1.jpg" alt="" class="img-fluid">
-										</div>
-										<div class="col-lg-9 col-sm-10 col-9 w3_mvd">
-											<a href="">Samsung Galaxy On7 Prime (Gold, 4GB RAM + 64GB Memory)</a>
-											<a href="" class="price-mar mt-2">$12,990.00</a>
-										</div>
-									</div>
-									<div class="row my-4">
-										<div class="col-lg-3 col-sm-2 col-3 left-mar">
-											<img src="${images}/k2.jpg" alt="" class="img-fluid">
-										</div>
-										<div class="col-lg-9 col-sm-10 col-9 w3_mvd">
-											<a href="">Haier 195 L 4 Star Direct-Cool Single Door Refrigerator</a>
-											<a href="" class="price-mar mt-2">$12,499.00</a>
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-lg-3 col-sm-2 col-3 left-mar">
-											<img src="${images}/k3.jpg" alt="" class="img-fluid">
-										</div>
-										<div class="col-lg-9 col-sm-10 col-9 w3_mvd">
-											<a href="">Ambrane 13000 mAh Power Bank (P-1310 Premium)</a>
-											<a href="" class="price-mar mt-2">$1,199.00 </a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- //best seller -->
+						
 					</div>
 					<!-- //product right -->
 				</div>
@@ -1245,96 +971,9 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 		</div>
 	</div>
 	<!-- //top products -->
-	<!---728x90--->
-
-	<!-- middle section -->
-	<div class="join-w3l1 py-sm-5 py-4">
-		<div class="container py-xl-4 py-lg-2">
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="join-agile text-left p-4">
-						<div class="row">
-							<div class="col-sm-7 offer-name">
-								<h6>Smooth, Rich & Loud Audio</h6>
-								<h4 class="mt-2 mb-3">Branded Headphones</h4>
-								<p>Sale up to 25% off all in store</p>
-							</div>
-							<div class="col-sm-5 offerimg-w3l">
-								<img src="${images}/off1.png" alt="" class="img-fluid">
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6 mt-lg-0 mt-5">
-					<div class="join-agile text-left p-4">
-						<div class="row ">
-							<div class="col-sm-7 offer-name">
-								<h6>A Bigger Phone</h6>
-								<h4 class="mt-2 mb-3">Smart Phones 5</h4>
-								<p>Free shipping order over $100</p>
-							</div>
-							<div class="col-sm-5 offerimg-w3l">
-								<img src="${images}/off2.png" alt="" class="img-fluid">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- middle section -->
-	<!---728x90--->
 
 	<!-- footer -->
 	<footer>
-		<div class="footer-top-first">
-			<div class="container py-md-5 py-sm-4 py-3">
-				<!-- footer first section -->
-				<h2 class="footer-top-head-w3l font-weight-bold mb-2">Electronics :</h2>
-				<p class="footer-main mb-4">
-					If you're considering a new laptop, looking for a powerful new car stereo or shopping for a new HDTV, we make it easy to
-					find exactly what you need at a price you can afford. We offer Every Day Low Prices on TVs, laptops, cell phones, tablets
-					and iPads, video games, desktop computers, cameras and camcorders, audio, video and more.</p>
-				<!-- //footer first section -->
-				<!-- footer second section -->
-				<div class="row w3l-grids-footer border-top border-bottom py-sm-4 py-3">
-					<div class="col-md-4 offer-footer">
-						<div class="row">
-							<div class="col-4 icon-fot">
-								<i class="fas fa-dolly"></i>
-							</div>
-							<div class="col-8 text-form-footer">
-								<h3>Free Shipping</h3>
-								<p>on orders over $100</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 offer-footer my-md-0 my-4">
-						<div class="row">
-							<div class="col-4 icon-fot">
-								<i class="fas fa-shipping-fast"></i>
-							</div>
-							<div class="col-8 text-form-footer">
-								<h3>Fast Delivery</h3>
-								<p>World Wide</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 offer-footer">
-						<div class="row">
-							<div class="col-4 icon-fot">
-								<i class="far fa-thumbs-up"></i>
-							</div>
-							<div class="col-8 text-form-footer">
-								<h3>Big Choice</h3>
-								<p>of Products</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- //footer second section -->
-			</div>
-		</div>
 		<!-- footer third section -->
 		<div class="w3l-middlefooter-sec">
 			<div class="container py-md-5 py-sm-4 py-3">
@@ -1447,254 +1086,6 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 				<!-- //quick links -->
 			</div>
 		</div>
-		<!-- //footer third section -->
-
-		<!-- footer fourth section -->
-		<div class="agile-sometext py-md-5 py-sm-4 py-3">
-			<div class="container">
-				<!-- brands -->
-				<div class="sub-some">
-					<h5 class="font-weight-bold mb-2">Mobile & Tablets :</h5>
-					<ul>
-						<li class="m-sm-1">
-							<a href="product.html" class="border-right pr-2">Android Phones</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product.html" class="border-right pr-2">Smartphones</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product.html" class="border-right pr-2">Feature Phones</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product.html" class="border-right pr-2">Unboxed Phones</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product.html" class="border-right pr-2">Refurbished Phones</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product.html" class="border-right pr-2"> Tablets</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product.html" class="border-right pr-2">CDMA Phones</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product.html" class="border-right pr-2">Value Added Services</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product.html" class="border-right pr-2">Sell Old</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product.html" class="border-right pr-2">Used Mobiles</a>
-						</li>
-					</ul>
-				</div>
-				<div class="sub-some mt-4">
-					<h5 class="font-weight-bold mb-2">Computers :</h5>
-					<ul>
-						<li class="m-sm-1">
-							<a href="product.html" class="border-right pr-2">Laptops </a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product.html" class="border-right pr-2">Printers</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product.html" class="border-right pr-2">Routers</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product.html" class="border-right pr-2">Ink & Toner Cartridges</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product.html" class="border-right pr-2">Monitors</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product.html" class="border-right pr-2">Video Games</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product.html" class="border-right pr-2">Unboxed & Refurbished Laptops</a>
-						</li>
-						<li>
-							<a href="product.html" class="border-right pr-2">Assembled Desktops</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Data Cards</a>
-						</li>
-					</ul>
-				</div>
-				<div class="sub-some mt-4">
-					<h5 class="font-weight-bold mb-2">TV, Audio & Large Appliances :</h5>
-					<ul>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">TVs & DTH</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Home Theatre Systems</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Hidden Cameras & CCTVs</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Refrigerators</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Washing Machines</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2"> Air Conditioners</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Cameras</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Speakers</a>
-						</li>
-					</ul>
-				</div>
-				<div class="sub-some mt-4">
-					<h5 class="font-weight-bold mb-2">Mobile & Laptop Accessories :</h5>
-					<ul>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Headphones</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product.html" class="border-right pr-2">Power Banks </a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product.html" class="border-right pr-2">Backpacks</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product.html" class="border-right pr-2">Mobile Cases & Covers</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product.html" class="border-right pr-2">Pen Drives</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">External Hard Disks</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2"> Mouse</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Smart Watches & Fitness Bands</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">MicroSD Cards</a>
-						</li>
-					</ul>
-				</div>
-				<div class="sub-some mt-4">
-					<h5 class="font-weight-bold mb-2">Appliances :</h5>
-					<ul>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Trimmers</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Hair Dryers</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Emergency Lights</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Water Purifiers </a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Electric Kettles</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Hair Straighteners</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Induction Cooktops</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Sewing Machines</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2"> Geysers</a>
-						</li>
-					</ul>
-				</div>
-				<div class="sub-some mt-4">
-					<h5 class="font-weight-bold mb-2">Popular on Electro Store</h5>
-					<ul>
-						<li class="m-sm-1">
-							<a href="product.html" class="border-right pr-2">Offers & Coupons</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Couple Watches</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Gas Stoves</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2"> Air Coolers</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Air Purifiers</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Headphones</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2"> Headsets</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Pressure Cookers</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Sandwich Makers</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Air Friers</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Irons</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">LED TV</a>
-						</li>
-						<li class="m-sm-1">
-							<a href="product2.html" class="border-right pr-2">Sandwich Makers</a>
-						</li>
-					</ul>
-				</div>
-				<!-- //brands -->
-				<!-- payment -->
-				<div class="sub-some child-momu mt-4">
-					<h5 class="font-weight-bold mb-3">Payment Method</h5>
-					<ul>
-						<li>
-							<img src="${images}/pay2.png" alt="">
-						</li>
-						<li>
-							<img src="${images}/pay5.png" alt="">
-						</li>
-						<li>
-							<img src="${images}/pay1.png" alt="">
-						</li>
-						<li>
-							<img src="${images}/pay4.png" alt="">
-						</li>
-						<li>
-							<img src="${images}/pay6.png" alt="">
-						</li>
-						<li>
-							<img src="${images}/pay3.png" alt="">
-						</li>
-						<li>
-							<img src="${images}/pay7.png" alt="">
-						</li>
-						<li>
-							<img src="${images}/pay8.png" alt="">
-						</li>
-						<li>
-							<img src="${images}/pay9.png" alt="">
-						</li>
-					</ul>
-				</div>
-				<!-- //payment -->
-			</div>
-		</div>
-		<!-- //footer fourth section (text) -->
 	</footer>
 	<!-- //footer -->
 	<!-- copyright -->
@@ -1709,7 +1100,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 
 	<!-- js-files -->
 	<!-- jquery -->
-	<script src="${js}/jquery-2.2.3.min.js"></script>
+	<script src="js/jquery-2.2.3.min.js"></script>
 	<!-- //jquery -->
 
 	<!-- nav smooth scroll -->
@@ -1730,7 +1121,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 	<!-- //nav smooth scroll -->
 
 	<!-- popup modal (for location)-->
-	<script src="${js}/jquery.magnific-popup.js"></script>
+	<script src="js/jquery.magnific-popup.js"></script>
 	<script>
 		$(document).ready(function () {
 			$('.popup-with-zoom-anim').magnificPopup({
@@ -1750,7 +1141,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 	<!-- //popup modal (for location)-->
 
 	<!-- cart-js -->
-	<script src="${js}/minicart.js"></script>
+	<script src="js/minicart.js"></script>
 	<script>
 		paypals.minicarts.render(); //use only unique class names other than paypals.minicarts.Also Replace same class name in css and minicart.min.js
 
@@ -1793,16 +1184,16 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 	<!-- //password-script -->
 	
 	<!-- scroll seller -->
-	<script src="${js}/scroll.js"></script>
+	<script src="js/scroll.js"></script>
 	<!-- //scroll seller -->
 
 	<!-- smoothscroll -->
-	<script src="${js}/SmoothScroll.min.js"></script>
+	<script src="js/SmoothScroll.min.js"></script>
 	<!-- //smoothscroll -->
 
 	<!-- start-smooth-scrolling -->
-	<script src="${js}/move-top.js"></script>
-	<script src="${js}/easing.js"></script>
+	<script src="js/move-top.js"></script>
+	<script src="js/easing.js"></script>
 	<script>
 		jQuery(document).ready(function ($) {
 			$(".scroll").click(function (event) {
@@ -1836,7 +1227,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 	<!-- //smooth-scrolling-of-move-up -->
 
 	<!-- for bootstrap working -->
-	<script src="${js}/bootstrap.js"></script>
+	<script src="js/bootstrap.js"></script>
 	<!-- //for bootstrap working -->
 	<!-- //js-files -->
 </body>
