@@ -116,6 +116,18 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 		<%@ include file = "contact.jsp" %>
 	</c:if>
 	
+	<c:if test="${userClickCat1 == true }">
+		<%@ include file = "cat1.jsp" %>
+	</c:if>
+	
+	<c:if test="${userClickCat2 == true }">
+		<%@ include file = "cat2.jsp" %>
+	</c:if>
+	
+	<c:if test="${userClickProduct1 == true }">
+		<%@ include file = "product1.jsp" %>
+	</c:if>
+	
 	<!-- footer -->
 	<%@ include file = "./canal/footer.jsp" %>
 	<!-- //copyright -->

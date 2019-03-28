@@ -238,7 +238,7 @@
 							</a>
 						</li>
 						<li class="nav-item dropdown mr-lg-2 mb-lg-0 mb-2">
-							<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<a class="nav-link dropdown-toggle" href="${contextRoot}/electronic1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								Electronics
 							</a>
 							<div class="dropdown-menu">
@@ -306,7 +306,7 @@
 							</div>
 						</li>
 						<li class="nav-item dropdown mr-lg-2 mb-lg-0 mb-2">
-							<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<a class="nav-link dropdown-toggle" href="${contextRoot}/electronic2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								Appliances
 							</a>
 							<div class="dropdown-menu">
@@ -390,7 +390,7 @@
 								Pages
 							</a>
 							<div class="dropdown-menu">
-								<a class="dropdown-item" href="product.html">Product 1</a>
+								<a class="dropdown-item" href="${contextRoot}/product1">Product 1</a>
 								<a class="dropdown-item" href="product2.html">Product 2</a>
 								<div class="dropdown-divider"></div>
 								<a class="dropdown-item" href="single.html">Single Product 1</a>

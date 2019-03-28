@@ -37,5 +37,25 @@ public class PageController {
 		return mv;
 	}
 	
+	@RequestMapping(value = {"/electronic1"})
+	public ModelAndView electronic1() {
+		
+		ModelAndView mv = new ModelAndView("page");
+		mv.addObject("title", "Product");
+		mv.addObject("userClickProduct1", true);
+		
+		return mv;
+	}
+	
+	@RequestMapping(value = {"/electronic2"})
+	public ModelAndView electronic2() {
+		
+		ModelAndView mv = new ModelAndView("page");
+		mv.addObject("title", "Product");
+		mv.addObject("userClickProduct2", true);
+		
+		return mv;
+	}
+	
 	
 }
