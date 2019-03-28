@@ -8,7 +8,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html lang="zxx">
 
 <head>
-	<title>Affrah </title>
+	<title>Affrah</title>
 	<!-- Meta tag Keywords -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8" />
@@ -429,7 +429,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								</div>
 							</div>
 						</li>
-						<li class="nav-item mr-lg-2 mb-lg-0 mb-2">
+						<li class="nav-item active mr-lg-2 mb-lg-0 mb-2">
 							<a class="nav-link" href="about.html">About Us</a>
 						</li>
 						<li class="nav-item mr-lg-2 mb-lg-0 mb-2">
@@ -474,47 +474,36 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<a href="index.html">Home</a>
 						<i>|</i>
 					</li>
-					<li>Terms</li>
+					<li>About Us</li>
 				</ul>
 			</div>
 		</div>
 	</div>
 	<!-- //page -->
 
-	<!-- terms -->
-	<div class="terms py-sm-5 py-4">
+	<!-- about -->
+	<div class="welcome py-sm-5 py-4">
 		<div class="container py-xl-4 py-lg-2">
 			<!-- tittle heading -->
 			<h3 class="tittle-w3l text-center mb-lg-5 mb-sm-4 mb-3">
-				<span>T</span>erms
-				<span>O</span>f
-				<span>U</span>se </h3>
+				<span>A</span>bout
+				<span>U</span>s</h3>
 			<!-- //tittle heading -->
-			<h3 class="w3-head w3-secong-head text-capitalize">please read these terms and conditions carefully.</h3>
-			<h6 class="my-md-4 my-3">Personal Information</h6>
-			<ol start="1" class="pl-sm-4 pl-3">
-				<li class="font-weight-light pl-sm-4 mb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.it has a more-or-less normal distribution of
-					letters, as opposed Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</li>
-				<li class="font-weight-light pl-sm-4 mb-2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-					eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
-					quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores</li>
-				<li class="font-weight-light pl-sm-4 mb-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.it has a more-or-less normal distribution of
-					letters, as opposed Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</li>
-			</ol>
-
-			<h6 class="my-md-4 my-3">License & Site access</h6>
-			<p class="font-weight-light pl-sm-4 mb-2">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
-				ratione voluptatem sequi nesciunt..</p>
-			<p class="font-weight-light pl-sm-4 mb-2">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius
-				modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
-			<p class="font-weight-light pl-sm-4 mb-2">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-				ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-			
-			<h6 class="my-md-4 my-3">Copyright & Trademark</h6>
-			
+			<div class="row">
+				<div class="col-lg-6 welcome-left">
+					<h3>Welcome</h3>
+					<h4 class="my-sm-3 my-2">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4>
+				</div>
+				<div class="col-lg-6 welcome-right-top mt-lg-0 mt-sm-5 mt-4">
+					<img src="images/ab.jpg" class="img-fluid" alt=" ">
+				</div>
+			</div>
 		</div>
 	</div>
+	<!-- //about -->
+	<!-- footer -->
+	<footer>
 		<!-- footer third section -->
 		<div class="w3l-middlefooter-sec">
 			<div class="container py-md-5 py-sm-4 py-3">
@@ -627,12 +616,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<!-- //quick links -->
 			</div>
 		</div>
-	</footer>
 	<!-- //footer -->
 	<!-- copyright -->
 	<div class="copy-right py-3">
 		<div class="container">
-			<p class="text-center text-white">Â© 2018 Electro Store. All rights reserved | Design by
+			<p class="text-center text-white">© 2018 Electro Store. All rights reserved | Design by
 				<a href="http://w3layouts.com"> W3layouts.</a>
 			</p>
 		</div>
