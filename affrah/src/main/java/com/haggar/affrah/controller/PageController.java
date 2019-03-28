@@ -42,7 +42,7 @@ public class PageController {
 		
 		ModelAndView mv = new ModelAndView("page");
 		mv.addObject("title", "Product");
-		mv.addObject("userClickProduct1", true);
+		mv.addObject("userClickCat1", true);
 		
 		return mv;
 	}
@@ -52,7 +52,17 @@ public class PageController {
 		
 		ModelAndView mv = new ModelAndView("page");
 		mv.addObject("title", "Product");
-		mv.addObject("userClickProduct2", true);
+		mv.addObject("userClickCat2", true);
+		
+		return mv;
+	}
+	
+	@RequestMapping(value = {"/product1"})
+	public ModelAndView product1() {
+		
+		ModelAndView mv = new ModelAndView("page");
+		mv.addObject("title", "Product");
+		mv.addObject("userClickProduct1", true);
 		
 		return mv;
 	}
