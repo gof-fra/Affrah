@@ -1,16 +1,14 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 
-<spring:url var="css" value="/resources/css" />
+<spring:url var="css" value="/resources//css" />
 <spring:url var="js" value="/resources/js" />
 <spring:url var="images" value="/resources/images" />
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
+
+<c:set var="contextRoot" value="${pageContext.request.contextPath}" />
+
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -33,7 +31,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- //Meta tag Keywords -->
 
 	<!-- Custom-Files -->
-	<link href="${css}/bootstrapT.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="${css}/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 	<!-- Bootstrap css -->
 	<link href="${css}/style.css" rel="stylesheet" type="text/css" media="all" />
 	<!-- Main css -->
@@ -58,7 +56,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 	<!-- banner-2 -->
 	<div class="page-head_agile_info_w3l">
-
+		<!-- watch & phone -->
 	</div>
 	<!-- //banner-2 -->
 	<!-- page -->
@@ -155,7 +153,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div class="map mt-sm-0 mt-4">
 		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d805196.5077734194!2d144.49270863101745!3d-37.97015423820711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad646b5d2ba4df7%3A0x4045675218ccd90!2sMelbourne+VIC%2C+Australia!5e0!3m2!1sen!2sin!4v1474020956974"
 		    allowfullscreen></iframe>
-
+	</div>
 	<!-- //copyright -->
 
 	<!-- js-files -->
@@ -283,7 +281,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- //smooth-scrolling-of-move-up -->
 
 	<!-- for bootstrap working -->
-	<script src="${js}/bootstrapT.js"></script>
+	<script src="${js}/bootstrap.js"></script>
 	<!-- //for bootstrap working -->
 	<!-- //js-files -->
 

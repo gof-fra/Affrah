@@ -10,7 +10,7 @@ public class PageController {
 	@RequestMapping(value = {"/", "/home", "/index"})
 	public ModelAndView index() {
 		
-		ModelAndView mv = new ModelAndView("page");
+		ModelAndView mv = new ModelAndView("home");
 		mv.addObject("title", "Home");
 		mv.addObject("userClickHome", true);
 		
@@ -20,8 +20,8 @@ public class PageController {
 	@RequestMapping(value = {"/about"})
 	public ModelAndView about() {
 		
-		ModelAndView mv = new ModelAndView("page");
-		mv.addObject("title", "About");
+		ModelAndView mv = new ModelAndView("home");
+		mv.addObject("title", "About Us");
 		mv.addObject("userClickAbout", true);
 		
 		return mv;
@@ -30,53 +30,22 @@ public class PageController {
 	@RequestMapping(value = {"/contact"})
 	public ModelAndView contact() {
 		
-		ModelAndView mv = new ModelAndView("page");
-		mv.addObject("title", "Contact");
+		ModelAndView mv = new ModelAndView("home");
+		mv.addObject("title", "Contact Us");
 		mv.addObject("userClickContact", true);
 		
 		return mv;
 	}
 	
-	
-	@RequestMapping(value = {"/product1"})
-	public ModelAndView product1() {
+	@RequestMapping(value = {"/products"})
+	public ModelAndView products() {
 		
-		ModelAndView mv = new ModelAndView("page");
-		mv.addObject("title", "Product");
-		mv.addObject("userClickProduct1", true);
-		
-		return mv;
-	}
-	
-	@RequestMapping(value = {"/product2"})
-	public ModelAndView product2() {
-		
-		ModelAndView mv = new ModelAndView("page");
-		mv.addObject("title", "Product");
-		mv.addObject("userClickProduct2", true);
+		ModelAndView mv = new ModelAndView("home");
+		mv.addObject("title", " Products ");
+		mv.addObject("userClickProducts", true);
 		
 		return mv;
 	}
-	
-	@RequestMapping(value = {"/single1"})
-	public ModelAndView single1() {
-		
-		ModelAndView mv = new ModelAndView("page");
-		mv.addObject("title", "Product");
-		mv.addObject("userClickSingle1", true);
-		
-		return mv;
-	}
-	
-	@RequestMapping(value = {"/single2"})
-	public ModelAndView single2() {
-		
-		ModelAndView mv = new ModelAndView("page");
-		mv.addObject("title", "Product");
-		mv.addObject("userClickSingle2", true);
-		
-		return mv;
-	}
-	
 	
 }
+	

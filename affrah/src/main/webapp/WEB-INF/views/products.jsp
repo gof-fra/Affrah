@@ -1,16 +1,15 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 
-<spring:url var="css" value="/resources/css" />
+<spring:url var="css" value="/resources//css" />
 <spring:url var="js" value="/resources/js" />
 <spring:url var="images" value="/resources/images" />
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
+
+
+<c:set var="contextRoot" value="${pageContext.request.contextPath}" />
+
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -33,7 +32,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- //Meta tag Keywords -->
 
 	<!-- Custom-Files -->
-	<link href="${css}/bootstrapT.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="${css}/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 	<!-- Bootstrap css -->
 	<link href="${css}/style.css" rel="stylesheet" type="text/css" media="all" />
 	<!-- Main css -->
@@ -55,6 +54,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 <body>
 	<!-- top-header -->
+
+	<!-- //navigation -->
 
 	<!-- banner-2 -->
 	<div class="page-head_agile_info_w3l">
@@ -99,13 +100,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 											<img src="${images}/m1.jpg" alt="">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
-													<a href="${contextRoot}/single1" class="link-product-add-cart">Quick View</a>
+													<a href="${contextRoot}/single.jsp" class="link-product-add-cart">Quick View</a>
 												</div>
 											</div>
 										</div>
 										<div class="item-info-product text-center border-top mt-4">
 											<h4 class="pt-1">
-												<a href="${contextRoot}/single1">Samsung Galaxy J7</a>
+												<a href="${contextRoot}/single.jsp">Samsung Galaxy J7</a>
 											</h4>
 											<div class="info-product-price my-2">
 												<span class="item_price">$200.00</span>
@@ -137,7 +138,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 											<img src="${images}/m2.jpg" alt="">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
-													<a href="${contextRoot}/single1" class="link-product-add-cart">Quick View</a>
+													<a href="${contextRoot}/single.jsp" class="link-product-add-cart">Quick View</a>
 												</div>
 											</div>
 											<span class="product-new-top">New</span>
@@ -145,7 +146,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 										</div>
 										<div class="item-info-product text-center border-top mt-4">
 											<h4 class="pt-1">
-												<a href="${contextRoot}/single1">OPPO A37f</a>
+												<a href="${contextRoot}/single.jsp">OPPO A37f</a>
 											</h4>
 											<div class="info-product-price my-2">
 												<span class="item_price">$230.00</span>
@@ -177,7 +178,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 											<img src="${images}/m3.jpg" alt="">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
-													<a href="${contextRoot}/single1" class="link-product-add-cart">Quick View</a>
+													<a href="${contextRoot}/single.jsp" class="link-product-add-cart">Quick View</a>
 												</div>
 											</div>
 											<span class="product-new-top">New</span>
@@ -185,7 +186,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 										</div>
 										<div class="item-info-product text-center border-top mt-4">
 											<h4 class="pt-1">
-												<a href="${contextRoot}/single1">Apple iPhone X</a>
+												<a href="${contextRoot}/single.jsp">Apple iPhone X</a>
 											</h4>
 											<div class="info-product-price my-2">
 												<span class="item_price">$280.00</span>
@@ -222,13 +223,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 											<img src="${images}/mk1.jpg" alt="">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
-													<a href="${contextRoot}/single1" class="link-product-add-cart">Quick View</a>
+													<a href="${contextRoot}/single.jsp" class="link-product-add-cart">Quick View</a>
 												</div>
 											</div>
 										</div>
 										<div class="item-info-product text-center border-top mt-4">
 											<h4 class="pt-1">
-												<a href="${contextRoot}/single1">Infinix Hot S3</a>
+												<a href="${contextRoot}/single.jsp">Infinix Hot S3</a>
 											</h4>
 											<div class="info-product-price my-2">
 												<span class="item_price">$300.00</span>
@@ -261,14 +262,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 											<img src="${images}/mk2.jpg" alt="">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
-													<a href="${contextRoot}/single1" class="link-product-add-cart">Quick View</a>
+													<a href="${contextRoot}/single.jsp" class="link-product-add-cart">Quick View</a>
 												</div>
 											</div>
 
 										</div>
 										<div class="item-info-product text-center border-top mt-4">
 											<h4 class="pt-1">
-												<a href="${contextRoot}/single1">Moto X4 (6 GB)</a>
+												<a href="${contextRoot}/single.jsp">Moto X4 (6 GB)</a>
 											</h4>
 											<div class="info-product-price my-2">
 												<span class="item_price">$233.00</span>
@@ -300,13 +301,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 											<img src="${images}/mk3.jpg" alt="">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
-													<a href="${contextRoot}/single1" class="link-product-add-cart">Quick View</a>
+													<a href="${contextRoot}/single.jsp" class="link-product-add-cart">Quick View</a>
 												</div>
 											</div>
 										</div>
 										<div class="item-info-product text-center border-top mt-4">
 											<h4 class="pt-1">
-												<a href="${contextRoot}/single1">iVooMi i Series</a>
+												<a href="${contextRoot}/single.jsp">iVooMi i Series</a>
 											</h4>
 											<div class="info-product-price my-2">
 												<span class="item_price">$249.00</span>
@@ -344,13 +345,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 											<img src="${images}/mk4.jpg" alt="" class="img-fluid">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
-													<a href="${contextRoot}/single1" class="link-product-add-cart">Quick View</a>
+													<a href="${contextRoot}/single.jsp" class="link-product-add-cart">Quick View</a>
 												</div>
 											</div>
 										</div>
 										<div class="item-info-product text-center border-top mt-4">
 											<h4 class="pt-1">
-												<a href="${contextRoot}/single1">Dell Vostro Laptop</a>
+												<a href="${contextRoot}/single.jsp">Dell Vostro Laptop</a>
 											</h4>
 											<div class="info-product-price my-2">
 												<span class="item_price">$252.00</span>
@@ -382,13 +383,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 											<img src="${images}/mk5.jpg" alt="" class="img-fluid">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
-													<a href="${contextRoot}/single1" class="link-product-add-cart">Quick View</a>
+													<a href="${contextRoot}/single.jsp" class="link-product-add-cart">Quick View</a>
 												</div>
 											</div>
 										</div>
 										<div class="item-info-product text-center border-top mt-4">
 											<h4 class="pt-1">
-												<a href="${contextRoot}/single1">Acer Laptop</a>
+												<a href="${contextRoot}/single.jsp">Acer Laptop</a>
 											</h4>
 											<div class="info-product-price my-2">
 												<span class="item_price">$240.00</span>
@@ -420,13 +421,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 											<img src="${images}/mk6.jpg" alt="" class="img-fluid">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
-													<a href="${contextRoot}/single1" class="link-product-add-cart">Quick View</a>
+													<a href="${contextRoot}/single.jsp" class="link-product-add-cart">Quick View</a>
 												</div>
 											</div>
 										</div>
 										<div class="item-info-product text-center border-top mt-4">
 											<h4 class="pt-1">
-												<a href="${contextRoot}/single1">Lenovo </a>
+												<a href="${contextRoot}/single.jsp">Lenovo </a>
 											</h4>
 											<div class="info-product-price my-2">
 												<span class="item_price">$300.00</span>
@@ -463,14 +464,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 											<img src="${images}/mk7.jpg" alt="" class="img-fluid">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
-													<a href="${contextRoot}/single1" class="link-product-add-cart">Quick View</a>
+													<a href="${contextRoot}/single.jsp" class="link-product-add-cart">Quick View</a>
 												</div>
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
 										<div class="item-info-product text-center border-top mt-4">
 											<h4 class="pt-1">
-												<a href="${contextRoot}/single1">Intex Power Bank</a>
+												<a href="${contextRoot}/single.jsp">Intex Power Bank</a>
 											</h4>
 											<div class="info-product-price my-2">
 												<span class="item_price">$100.00</span>
@@ -502,14 +503,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 											<img src="${images}/mk8.jpg" alt="" class="img-fluid">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
-													<a href="${contextRoot}/single1" class="link-product-add-cart">Quick View</a>
+													<a href="${contextRoot}/single.jsp" class="link-product-add-cart">Quick View</a>
 												</div>
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
 										<div class="item-info-product text-center border-top mt-4">
 											<h4 class="pt-1">
-												<a href="${contextRoot}/single1">HP Wireless Printer</a>
+												<a href="${contextRoot}/single.jsp">HP Wireless Printer</a>
 											</h4>
 											<div class="info-product-price my-2">
 												<span class="item_price">$243.00</span>
@@ -540,13 +541,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 											<img src="${images}/mk9.jpg" alt="" class="img-fluid">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
-													<a href="${contextRoot}/single1" class="link-product-add-cart">Quick View</a>
+													<a href="${contextRoot}/single.jsp" class="link-product-add-cart">Quick View</a>
 												</div>
 											</div>
 										</div>
 										<div class="item-info-product text-center border-top mt-4">
 											<h4 class="pt-1">
-												<a href="${contextRoot}/single1">Alcatel Tablet</a>
+												<a href="${contextRoot}/single.jsp">Alcatel Tablet</a>
 											</h4>
 											<div class="info-product-price my-2">
 												<span class="item_price">$320.00</span>
@@ -793,7 +794,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</div>
 	</div>
 
-
+	<!-- footer -->
+	
 	<!-- //copyright -->
 
 	<!-- js-files -->
@@ -921,7 +923,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- //smooth-scrolling-of-move-up -->
 
 	<!-- for bootstrap working -->
-	<script src="${js}/bootstrapT.js"></script>
+	<script src="${js}/bootstrap.js"></script>
 	<!-- //for bootstrap working -->
 	<!-- //js-files -->
 

@@ -1,4 +1,5 @@
-<footer>
+	<!-- footer -->
+	<footer>
 		<!-- footer third section -->
 		<div class="w3l-middlefooter-sec">
 			<div class="container py-md-5 py-sm-4 py-3">
@@ -111,7 +112,6 @@
 				<!-- //quick links -->
 			</div>
 		</div>
-		<!-- //footer third section -->
 	</footer>
 	<!-- //footer -->
 	<!-- copyright -->
@@ -122,3 +122,4 @@
 			</p>
 		</div>
 	</div>
+	<!-- //copyright -->
