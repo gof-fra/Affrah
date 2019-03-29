@@ -1,3 +1,10 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
+
+<spring:url var="css" value="/resources/css" />
+<spring:url var="js" value="/resources/js" />
+<spring:url var="images" value="/resources/images" />
 <!--
 Author: W3layouts
 Author URL: http://w3layouts.com
@@ -26,15 +33,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- //Meta tag Keywords -->
 
 	<!-- Custom-Files -->
-	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="${css}/bootstrapT.css" rel="stylesheet" type="text/css" media="all" />
 	<!-- Bootstrap css -->
-	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="${css}/style.css" rel="stylesheet" type="text/css" media="all" />
 	<!-- Main css -->
-	<link rel="stylesheet" href="css/fontawesome-all.css">
+	<link rel="stylesheet" href="${css}/fontawesome-all.css">
 	<!-- Font-Awesome-Icons-CSS -->
-	<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="${css}/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
 	<!-- pop-up-box -->
-	<link href="css/menu.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="${css}/menu.css" rel="stylesheet" type="text/css" media="all" />
 	<!-- menu style -->
 	<!-- //Custom-Files -->
 
@@ -60,7 +67,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="container">
 				<ul class="w3_short">
 					<li>
-						<a href="index.html">Home</a>
+						<a href="${contextRoot}/home">Home</a>
 						<i>|</i>
 					</li>
 					<li>Contact Us</li>
@@ -153,7 +160,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 	<!-- js-files -->
 	<!-- jquery -->
-	<script src="js/jquery-2.2.3.min.js"></script>
+	<script src="${js}/jquery-2.2.3.min.js"></script>
 	<!-- //jquery -->
 
 	<!-- nav smooth scroll -->
@@ -174,7 +181,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- //nav smooth scroll -->
 
 	<!-- popup modal (for location)-->
-	<script src="js/jquery.magnific-popup.js"></script>
+	<script src="${js}/jquery.magnific-popup.js"></script>
 	<script>
 		$(document).ready(function () {
 			$('.popup-with-zoom-anim').magnificPopup({
@@ -194,7 +201,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- //popup modal (for location)-->
 
 	<!-- cart-js -->
-	<script src="js/minicart.js"></script>
+	<script src="${js}/minicart.js"></script>
 	<script>
 		paypals.minicarts.render(); //use only unique class names other than paypals.minicarts.Also Replace same class name in css and minicart.min.js
 
@@ -237,12 +244,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- //password-script -->
 
 	<!-- smoothscroll -->
-	<script src="js/SmoothScroll.min.js"></script>
+	<script src="${js}/SmoothScroll.min.js"></script>
 	<!-- //smoothscroll -->
 
 	<!-- start-smooth-scrolling -->
-	<script src="js/move-top.js"></script>
-	<script src="js/easing.js"></script>
+	<script src="${js}/move-top.js"></script>
+	<script src="${js}/easing.js"></script>
 	<script>
 		jQuery(document).ready(function ($) {
 			$(".scroll").click(function (event) {
@@ -276,7 +283,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- //smooth-scrolling-of-move-up -->
 
 	<!-- for bootstrap working -->
-	<script src="js/bootstrap.js"></script>
+	<script src="${js}/bootstrapT.js"></script>
 	<!-- //for bootstrap working -->
 	<!-- //js-files -->
 

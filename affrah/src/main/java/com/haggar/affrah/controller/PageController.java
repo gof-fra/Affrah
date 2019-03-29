@@ -37,25 +37,6 @@ public class PageController {
 		return mv;
 	}
 	
-	@RequestMapping(value = {"/electronic1"})
-	public ModelAndView electronic1() {
-		
-		ModelAndView mv = new ModelAndView("page");
-		mv.addObject("title", "Product");
-		mv.addObject("userClickCat1", true);
-		
-		return mv;
-	}
-	
-	@RequestMapping(value = {"/electronic2"})
-	public ModelAndView electronic2() {
-		
-		ModelAndView mv = new ModelAndView("page");
-		mv.addObject("title", "Product");
-		mv.addObject("userClickCat2", true);
-		
-		return mv;
-	}
 	
 	@RequestMapping(value = {"/product1"})
 	public ModelAndView product1() {
@@ -63,6 +44,36 @@ public class PageController {
 		ModelAndView mv = new ModelAndView("page");
 		mv.addObject("title", "Product");
 		mv.addObject("userClickProduct1", true);
+		
+		return mv;
+	}
+	
+	@RequestMapping(value = {"/product2"})
+	public ModelAndView product2() {
+		
+		ModelAndView mv = new ModelAndView("page");
+		mv.addObject("title", "Product");
+		mv.addObject("userClickProduct2", true);
+		
+		return mv;
+	}
+	
+	@RequestMapping(value = {"/single1"})
+	public ModelAndView single1() {
+		
+		ModelAndView mv = new ModelAndView("page");
+		mv.addObject("title", "Product");
+		mv.addObject("userClickSingle1", true);
+		
+		return mv;
+	}
+	
+	@RequestMapping(value = {"/single2"})
+	public ModelAndView single2() {
+		
+		ModelAndView mv = new ModelAndView("page");
+		mv.addObject("title", "Product");
+		mv.addObject("userClickSingle2", true);
 		
 		return mv;
 	}

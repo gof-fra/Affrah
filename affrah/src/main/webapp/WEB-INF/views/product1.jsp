@@ -33,11 +33,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- //Meta tag Keywords -->
 
 	<!-- Custom-Files -->
-	<link href="${css}/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="${css}/bootstrapT.css" rel="stylesheet" type="text/css" media="all" />
 	<!-- Bootstrap css -->
 	<link href="${css}/style.css" rel="stylesheet" type="text/css" media="all" />
 	<!-- Main css -->
-	<link rel="stylesheet" href="css/fontawesome-all.css">
+	<link rel="stylesheet" href="${css}/fontawesome-all.css">
 	<!-- Font-Awesome-Icons-CSS -->
 	<link href="${css}/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
 	<!-- pop-up-box -->
@@ -67,7 +67,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="container">
 				<ul class="w3_short">
 					<li>
-						<a href="index.html">Home</a>
+						<a href="${contextRoot}/home">Home</a>
 						<i>|</i>
 					</li>
 					<li>Electronics</li>
@@ -99,13 +99,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 											<img src="${images}/m1.jpg" alt="">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
-													<a href="single.html" class="link-product-add-cart">Quick View</a>
+													<a href="${contextRoot}/single1" class="link-product-add-cart">Quick View</a>
 												</div>
 											</div>
 										</div>
 										<div class="item-info-product text-center border-top mt-4">
 											<h4 class="pt-1">
-												<a href="single.html">Samsung Galaxy J7</a>
+												<a href="${contextRoot}/single1">Samsung Galaxy J7</a>
 											</h4>
 											<div class="info-product-price my-2">
 												<span class="item_price">$200.00</span>
@@ -137,7 +137,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 											<img src="${images}/m2.jpg" alt="">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
-													<a href="single.html" class="link-product-add-cart">Quick View</a>
+													<a href="${contextRoot}/single1" class="link-product-add-cart">Quick View</a>
 												</div>
 											</div>
 											<span class="product-new-top">New</span>
@@ -145,7 +145,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 										</div>
 										<div class="item-info-product text-center border-top mt-4">
 											<h4 class="pt-1">
-												<a href="single.html">OPPO A37f</a>
+												<a href="${contextRoot}/single1">OPPO A37f</a>
 											</h4>
 											<div class="info-product-price my-2">
 												<span class="item_price">$230.00</span>
@@ -177,7 +177,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 											<img src="${images}/m3.jpg" alt="">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
-													<a href="single.html" class="link-product-add-cart">Quick View</a>
+													<a href="${contextRoot}/single1" class="link-product-add-cart">Quick View</a>
 												</div>
 											</div>
 											<span class="product-new-top">New</span>
@@ -185,7 +185,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 										</div>
 										<div class="item-info-product text-center border-top mt-4">
 											<h4 class="pt-1">
-												<a href="single.html">Apple iPhone X</a>
+												<a href="${contextRoot}/single1">Apple iPhone X</a>
 											</h4>
 											<div class="info-product-price my-2">
 												<span class="item_price">$280.00</span>
@@ -222,13 +222,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 											<img src="${images}/mk1.jpg" alt="">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
-													<a href="single.html" class="link-product-add-cart">Quick View</a>
+													<a href="${contextRoot}/single1" class="link-product-add-cart">Quick View</a>
 												</div>
 											</div>
 										</div>
 										<div class="item-info-product text-center border-top mt-4">
 											<h4 class="pt-1">
-												<a href="single.html">Infinix Hot S3</a>
+												<a href="${contextRoot}/single1">Infinix Hot S3</a>
 											</h4>
 											<div class="info-product-price my-2">
 												<span class="item_price">$300.00</span>
@@ -261,14 +261,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 											<img src="${images}/mk2.jpg" alt="">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
-													<a href="single.html" class="link-product-add-cart">Quick View</a>
+													<a href="${contextRoot}/single1" class="link-product-add-cart">Quick View</a>
 												</div>
 											</div>
 
 										</div>
 										<div class="item-info-product text-center border-top mt-4">
 											<h4 class="pt-1">
-												<a href="single.html">Moto X4 (6 GB)</a>
+												<a href="${contextRoot}/single1">Moto X4 (6 GB)</a>
 											</h4>
 											<div class="info-product-price my-2">
 												<span class="item_price">$233.00</span>
@@ -300,13 +300,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 											<img src="${images}/mk3.jpg" alt="">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
-													<a href="single.html" class="link-product-add-cart">Quick View</a>
+													<a href="${contextRoot}/single1" class="link-product-add-cart">Quick View</a>
 												</div>
 											</div>
 										</div>
 										<div class="item-info-product text-center border-top mt-4">
 											<h4 class="pt-1">
-												<a href="single.html">iVooMi i Series</a>
+												<a href="${contextRoot}/single1">iVooMi i Series</a>
 											</h4>
 											<div class="info-product-price my-2">
 												<span class="item_price">$249.00</span>
@@ -344,13 +344,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 											<img src="${images}/mk4.jpg" alt="" class="img-fluid">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
-													<a href="single.html" class="link-product-add-cart">Quick View</a>
+													<a href="${contextRoot}/single1" class="link-product-add-cart">Quick View</a>
 												</div>
 											</div>
 										</div>
 										<div class="item-info-product text-center border-top mt-4">
 											<h4 class="pt-1">
-												<a href="single.html">Dell Vostro Laptop</a>
+												<a href="${contextRoot}/single1">Dell Vostro Laptop</a>
 											</h4>
 											<div class="info-product-price my-2">
 												<span class="item_price">$252.00</span>
@@ -382,13 +382,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 											<img src="${images}/mk5.jpg" alt="" class="img-fluid">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
-													<a href="single.html" class="link-product-add-cart">Quick View</a>
+													<a href="${contextRoot}/single1" class="link-product-add-cart">Quick View</a>
 												</div>
 											</div>
 										</div>
 										<div class="item-info-product text-center border-top mt-4">
 											<h4 class="pt-1">
-												<a href="single.html">Acer Laptop</a>
+												<a href="${contextRoot}/single1">Acer Laptop</a>
 											</h4>
 											<div class="info-product-price my-2">
 												<span class="item_price">$240.00</span>
@@ -420,13 +420,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 											<img src="${images}/mk6.jpg" alt="" class="img-fluid">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
-													<a href="single.html" class="link-product-add-cart">Quick View</a>
+													<a href="${contextRoot}/single1" class="link-product-add-cart">Quick View</a>
 												</div>
 											</div>
 										</div>
 										<div class="item-info-product text-center border-top mt-4">
 											<h4 class="pt-1">
-												<a href="single.html">Lenovo </a>
+												<a href="${contextRoot}/single1">Lenovo </a>
 											</h4>
 											<div class="info-product-price my-2">
 												<span class="item_price">$300.00</span>
@@ -463,14 +463,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 											<img src="${images}/mk7.jpg" alt="" class="img-fluid">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
-													<a href="single.html" class="link-product-add-cart">Quick View</a>
+													<a href="${contextRoot}/single1" class="link-product-add-cart">Quick View</a>
 												</div>
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
 										<div class="item-info-product text-center border-top mt-4">
 											<h4 class="pt-1">
-												<a href="single.html">Intex Power Bank</a>
+												<a href="${contextRoot}/single1">Intex Power Bank</a>
 											</h4>
 											<div class="info-product-price my-2">
 												<span class="item_price">$100.00</span>
@@ -502,14 +502,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 											<img src="${images}/mk8.jpg" alt="" class="img-fluid">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
-													<a href="single.html" class="link-product-add-cart">Quick View</a>
+													<a href="${contextRoot}/single1" class="link-product-add-cart">Quick View</a>
 												</div>
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
 										<div class="item-info-product text-center border-top mt-4">
 											<h4 class="pt-1">
-												<a href="single.html">HP Wireless Printer</a>
+												<a href="${contextRoot}/single1">HP Wireless Printer</a>
 											</h4>
 											<div class="info-product-price my-2">
 												<span class="item_price">$243.00</span>
@@ -540,13 +540,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 											<img src="${images}/mk9.jpg" alt="" class="img-fluid">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
-													<a href="single.html" class="link-product-add-cart">Quick View</a>
+													<a href="${contextRoot}/single1" class="link-product-add-cart">Quick View</a>
 												</div>
 											</div>
 										</div>
 										<div class="item-info-product text-center border-top mt-4">
 											<h4 class="pt-1">
-												<a href="single.html">Alcatel Tablet</a>
+												<a href="${contextRoot}/single1">Alcatel Tablet</a>
 											</h4>
 											<div class="info-product-price my-2">
 												<span class="item_price">$320.00</span>
@@ -921,7 +921,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!-- //smooth-scrolling-of-move-up -->
 
 	<!-- for bootstrap working -->
-	<script src="${js}/bootstrap.js"></script>
+	<script src="${js}/bootstrapT.js"></script>
 	<!-- //for bootstrap working -->
 	<!-- //js-files -->
 

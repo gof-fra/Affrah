@@ -391,10 +391,10 @@
 							</a>
 							<div class="dropdown-menu">
 								<a class="dropdown-item" href="${contextRoot}/product1">Product 1</a>
-								<a class="dropdown-item" href="product2.html">Product 2</a>
+								<a class="dropdown-item" href="${contextRoot}/product2">Product 2</a>
 								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="single.html">Single Product 1</a>
-								<a class="dropdown-item" href="single2.html">Single Product 2</a>
+								<a class="dropdown-item" href="${contextRoot}/single1">Single Product 1</a>
+								<a class="dropdown-item" href="${contextRoot}/single2">Single Product 2</a>
 								<div class="dropdown-divider"></div>
 								<a class="dropdown-item" href="checkout.html">Checkout Page</a>
 								<a class="dropdown-item" href="payment.html">Payment Page</a>
