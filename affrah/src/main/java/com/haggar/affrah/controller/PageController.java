@@ -21,7 +21,7 @@ public class PageController {
 	public ModelAndView about() {
 		
 		ModelAndView mv = new ModelAndView("home");
-		mv.addObject("title", "About Us");
+		mv.addObject("title", "About");
 		mv.addObject("userClickAbout", true);
 		
 		return mv;
@@ -31,7 +31,7 @@ public class PageController {
 	public ModelAndView contact() {
 		
 		ModelAndView mv = new ModelAndView("home");
-		mv.addObject("title", "Contact Us");
+		mv.addObject("title", "Contact");
 		mv.addObject("userClickContact", true);
 		
 		return mv;
@@ -43,6 +43,36 @@ public class PageController {
 		ModelAndView mv = new ModelAndView("home");
 		mv.addObject("title", " Products ");
 		mv.addObject("userClickProducts", true);
+		
+		return mv;
+	}
+	
+	@RequestMapping(value = {"/single"})
+	public ModelAndView single() {
+		
+		ModelAndView mv = new ModelAndView("home");
+		mv.addObject("title", " Product ");
+		mv.addObject("userClickSingle", true);
+		
+		return mv;
+	}
+	
+	@RequestMapping(value = {"/checkout"})
+	public ModelAndView checkout() {
+		
+		ModelAndView mv = new ModelAndView("home");
+		mv.addObject("title", " My Card ");
+		mv.addObject("userClickCheckout", true);
+		
+		return mv;
+	}
+	
+	@RequestMapping(value = {"/payment"})
+	public ModelAndView payment() {
+		
+		ModelAndView mv = new ModelAndView("home");
+		mv.addObject("title", " My Card ");
+		mv.addObject("userClickPayment", true);
 		
 		return mv;
 	}

@@ -10,12 +10,11 @@
 
 <c:set var="contextRoot" value="${pageContext.request.contextPath}" />
 
-
 <!DOCTYPE html>
 <html lang="zxx">
 
 <head>
-	<title> Affrah Shop - ${title} </title>
+	<title>Affrah</title>
 	<!-- Meta tag Keywords -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8" />
@@ -54,87 +53,150 @@
 </head>
 
 <body>
-<script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script><script src="//m.servedby-buysellads.com/monetization.js" type="text/javascript"></script>
-<script>
-(function(){
-	if(typeof _bsa !== 'undefined' && _bsa) {
-  		// format, zoneKey, segment:value, options
-  		_bsa.init('flexbar', 'CKYI627U', 'placement:w3layoutscom');
-  	}
-})();
-</script>
-<script>
-(function(){
-if(typeof _bsa !== 'undefined' && _bsa) {
-	// format, zoneKey, segment:value, options
-	_bsa.init('fancybar', 'CKYDL2JN', 'placement:demo');
-}
-})();
-</script>
-<script>
-(function(){
-	if(typeof _bsa !== 'undefined' && _bsa) {
-  		// format, zoneKey, segment:value, options
-  		_bsa.init('stickybox', 'CKYI653J', 'placement:w3layoutscom');
-  	}
-})();
-</script>
-<script>
-	(function(v,d,o,ai){ai=d.createElement("script");ai.defer=true;ai.async=true;ai.src=v.location.protocol+o;d.head.appendChild(ai);})(window, document, "//vdo.ai/core/w3layouts/vdo.ai.js");
-	</script>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125810435-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-125810435-1');
-</script><script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-ga('create', 'UA-30027142-1', 'w3layouts.com');
-  ga('send', 'pageview');
-</script>
-<body>
 	<!-- top-header -->
-	<%@ include file = "./canal/navbar.jsp" %>
 	<!-- //navigation -->
 
-	<!-- banner -->
-	<c:if test="${userClickHome == true }">
-		<%@ include file = "slide.jsp" %>
-	</c:if>
-	
-	<c:if test="${userClickAbout == true }">
-		<%@ include file = "about.jsp" %>
-	</c:if>
-	
-	<c:if test="${userClickContact == true }">
-		<%@ include file = "contact.jsp" %>
-	</c:if>
-	
-	<c:if test="${userClickProducts == true }">
-		<%@ include file = "products.jsp" %>
-	</c:if>
-	
-	<c:if test="${userClickSingle == true }">
-		<%@ include file = "single.jsp" %>
-	</c:if>
-	
-	<c:if test="${userClickCheckout == true }">
-		<%@ include file = "checkout.jsp" %>
-	</c:if>
-	
-	<c:if test="${userClickPayment == true }">
-		<%@ include file = "payment.jsp" %>
-	</c:if>
-	
-	
-	<!-- footer -->
-	<%@ include file = "./canal/footer.jsp" %>
+	<!-- banner-2 -->
+	<div class="page-head_agile_info_w3l">
+
+	</div>
+	<!-- //banner-2 -->
+	<!-- page -->
+	<div class="services-breadcrumb">
+		<div class="agile_inner_breadcrumb">
+			<div class="container">
+				<ul class="w3_short">
+					<li>
+						<a href="${contextRoot}/home">Home</a>
+						<i>|</i>
+					</li>
+					<li>Checkout</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- //page -->
+	<!-- checkout page -->
+	<div class="privacy py-sm-5 py-4">
+		<div class="container py-xl-4 py-lg-2">
+			<!-- tittle heading -->
+			<h3 class="tittle-w3l text-center mb-lg-5 mb-sm-4 mb-3">
+				<span>C</span>heckout
+			</h3>
+			<!-- //tittle heading -->
+			<div class="checkout-right">
+				<h4 class="mb-sm-4 mb-3">Your shopping cart contains:
+					<span>3 Products</span>
+				</h4>
+				<div class="table-responsive">
+					<table class="timetable_sub">
+						<thead>
+							<tr>
+								<th>SL No.</th>
+								<th>Product</th>
+								<th>Quality</th>
+								<th>Product Name</th>
+
+								<th>Price</th>
+								<th>Remove</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="rem1">
+								<td class="invert">1</td>
+								<td class="invert-image">
+									<a href="${contextRoot}/single">
+										<img src="${images}/a.jpg" alt=" " class="img-responsive">
+									</a>
+								</td>
+								<td class="invert">
+									<div class="quantity">
+										<div class="quantity-select">
+											<div class="entry value-minus">&nbsp;</div>
+											<div class="entry value">
+												<span>1</span>
+											</div>
+											<div class="entry value-plus active">&nbsp;</div>
+										</div>
+									</div>
+								</td>
+								<td class="invert">Back Cover</td>
+								<td class="invert">$259</td>
+								<td class="invert">
+									<div class="rem">
+										<div class="close1"> </div>
+									</div>
+								</td>
+							</tr>
+							<tr class="rem2">
+								<td class="invert">2</td>
+								<td class="invert-image">
+									<a href="${contextRoot}/single">
+										<img src="${images}/a4.jpg" alt=" " class="img-responsive">
+									</a>
+								</td>
+								<td class="invert">
+									<div class="quantity">
+										<div class="quantity-select">
+											<div class="entry value-minus">&nbsp;</div>
+											<div class="entry value">
+												<span>1</span>
+											</div>
+											<div class="entry value-plus active">&nbsp;</div>
+										</div>
+									</div>
+								</td>
+								<td class="invert">Cordless Trimmer</td>
+								<td class="invert">$1,999</td>
+								<td class="invert">
+									<div class="rem">
+										<div class="close2"> </div>
+									</div>
+								</td>
+							</tr>
+							<tr class="rem3">
+								<td class="invert">3</td>
+								<td class="invert-image">
+									<a href="${contextRoot}/single">
+										<img src="${images}/a3.jpg" alt=" " class="img-responsive">
+									</a>
+								</td>
+								<td class="invert">
+									<div class="quantity">
+										<div class="quantity-select">
+											<div class="entry value-minus">&nbsp;</div>
+											<div class="entry value">
+												<span>1</span>
+											</div>
+											<div class="entry value-plus active">&nbsp;</div>
+										</div>
+									</div>
+								</td>
+								<td class="invert">Nikon Camera</td>
+								<td class="invert">$37,490</td>
+								<td class="invert">
+									<div class="rem">
+										<div class="close3"> </div>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="checkout-left">
+				<div class="address_form_agile mt-sm-5 mt-4">
+					<div class="checkout-right-basket">
+						<a href="${contextRoot}/payment">Make a Payment
+							<span class="far fa-hand-point-right"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //checkout page -->
+		<!-- footer third section -->
 	<!-- //copyright -->
 
 	<!-- js-files -->
@@ -221,10 +283,50 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 		}
 	</script>
 	<!-- //password-script -->
-	
-	<!-- scroll seller -->
-	<script src="${js}/scroll.js"></script>
-	<!-- //scroll seller -->
+
+	<!-- quantity -->
+	<script>
+		$('.value-plus').on('click', function () {
+			var divUpd = $(this).parent().find('.value'),
+				newVal = parseInt(divUpd.text(), 10) + 1;
+			divUpd.text(newVal);
+		});
+
+		$('.value-minus').on('click', function () {
+			var divUpd = $(this).parent().find('.value'),
+				newVal = parseInt(divUpd.text(), 10) - 1;
+			if (newVal >= 1) divUpd.text(newVal);
+		});
+	</script>
+	<!--quantity-->
+	<script>
+		$(document).ready(function (c) {
+			$('.close1').on('click', function (c) {
+				$('.rem1').fadeOut('slow', function (c) {
+					$('.rem1').remove();
+				});
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function (c) {
+			$('.close2').on('click', function (c) {
+				$('.rem2').fadeOut('slow', function (c) {
+					$('.rem2').remove();
+				});
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function (c) {
+			$('.close3').on('click', function (c) {
+				$('.rem3').fadeOut('slow', function (c) {
+					$('.rem3').remove();
+				});
+			});
+		});
+	</script>
+	<!-- //quantity -->
 
 	<!-- smoothscroll -->
 	<script src="${js}/SmoothScroll.min.js"></script>
@@ -269,6 +371,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 	<script src="${js}/bootstrap.js"></script>
 	<!-- //for bootstrap working -->
 	<!-- //js-files -->
+
 </body>
 
 </html>

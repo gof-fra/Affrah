@@ -100,13 +100,13 @@
 											<img src="${images}/m1.jpg" alt="">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
-													<a href="${contextRoot}/single.jsp" class="link-product-add-cart">Quick View</a>
+													<a href="${contextRoot}/single" class="link-product-add-cart">Quick View</a>
 												</div>
 											</div>
 										</div>
 										<div class="item-info-product text-center border-top mt-4">
 											<h4 class="pt-1">
-												<a href="${contextRoot}/single.jsp">Samsung Galaxy J7</a>
+												<a href="${contextRoot}/single">Samsung Galaxy J7</a>
 											</h4>
 											<div class="info-product-price my-2">
 												<span class="item_price">$200.00</span>
@@ -138,7 +138,7 @@
 											<img src="${images}/m2.jpg" alt="">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
-													<a href="${contextRoot}/single.jsp" class="link-product-add-cart">Quick View</a>
+													<a href="${contextRoot}/single" class="link-product-add-cart">Quick View</a>
 												</div>
 											</div>
 											<span class="product-new-top">New</span>
@@ -146,7 +146,7 @@
 										</div>
 										<div class="item-info-product text-center border-top mt-4">
 											<h4 class="pt-1">
-												<a href="${contextRoot}/single.jsp">OPPO A37f</a>
+												<a href="${contextRoot}/single">OPPO A37f</a>
 											</h4>
 											<div class="info-product-price my-2">
 												<span class="item_price">$230.00</span>
@@ -178,7 +178,7 @@
 											<img src="${images}/m3.jpg" alt="">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
-													<a href="${contextRoot}/single.jsp" class="link-product-add-cart">Quick View</a>
+													<a href="${contextRoot}/single" class="link-product-add-cart">Quick View</a>
 												</div>
 											</div>
 											<span class="product-new-top">New</span>
@@ -186,7 +186,7 @@
 										</div>
 										<div class="item-info-product text-center border-top mt-4">
 											<h4 class="pt-1">
-												<a href="${contextRoot}/single.jsp">Apple iPhone X</a>
+												<a href="${contextRoot}/single">Apple iPhone X</a>
 											</h4>
 											<div class="info-product-price my-2">
 												<span class="item_price">$280.00</span>
@@ -214,128 +214,6 @@
 							</div>
 						</div>
 						<!-- //first section -->
-						<!-- second section -->
-						<div class="product-sec1 px-sm-4 px-3 py-sm-5  py-3 mb-4">
-							<div class="row">
-								<div class="col-md-4 product-men">
-									<div class="men-pro-item simpleCart_shelfItem">
-										<div class="men-thumb-item text-center">
-											<img src="${images}/mk1.jpg" alt="">
-											<div class="men-cart-pro">
-												<div class="inner-men-cart-pro">
-													<a href="${contextRoot}/single.jsp" class="link-product-add-cart">Quick View</a>
-												</div>
-											</div>
-										</div>
-										<div class="item-info-product text-center border-top mt-4">
-											<h4 class="pt-1">
-												<a href="${contextRoot}/single.jsp">Infinix Hot S3</a>
-											</h4>
-											<div class="info-product-price my-2">
-												<span class="item_price">$300.00</span>
-												<del>$320.00</del>
-											</div>
-											<span class="product-new-top">New</span>
-											<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-												<form action="#" method="post">
-													<fieldset>
-														<input type="hidden" name="cmd" value="_cart" />
-														<input type="hidden" name="add" value="1" />
-														<input type="hidden" name="business" value=" " />
-														<input type="hidden" name="item_name" value="Infinix Hot S3" />
-														<input type="hidden" name="amount" value="300.00" />
-														<input type="hidden" name="discount_amount" value="1.00" />
-														<input type="hidden" name="currency_code" value="USD" />
-														<input type="hidden" name="return" value=" " />
-														<input type="hidden" name="cancel_return" value=" " />
-														<input type="submit" name="submit" value="Add to cart" class="button btn" />
-													</fieldset>
-												</form>
-											</div>
-
-										</div>
-									</div>
-								</div>
-								<div class="col-md-4 product-men mt-md-0 mt-5">
-									<div class="men-pro-item simpleCart_shelfItem">
-										<div class="men-thumb-item text-center">
-											<img src="${images}/mk2.jpg" alt="">
-											<div class="men-cart-pro">
-												<div class="inner-men-cart-pro">
-													<a href="${contextRoot}/single.jsp" class="link-product-add-cart">Quick View</a>
-												</div>
-											</div>
-
-										</div>
-										<div class="item-info-product text-center border-top mt-4">
-											<h4 class="pt-1">
-												<a href="${contextRoot}/single.jsp">Moto X4 (6 GB)</a>
-											</h4>
-											<div class="info-product-price my-2">
-												<span class="item_price">$233.00</span>
-												<del>$240.00</del>
-											</div>
-											<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-												<form action="#" method="post">
-													<fieldset>
-														<input type="hidden" name="cmd" value="_cart" />
-														<input type="hidden" name="add" value="1" />
-														<input type="hidden" name="business" value=" " />
-														<input type="hidden" name="item_name" value="Moto X4 (6 GB)" />
-														<input type="hidden" name="amount" value="233.00" />
-														<input type="hidden" name="discount_amount" value="1.00" />
-														<input type="hidden" name="currency_code" value="USD" />
-														<input type="hidden" name="return" value=" " />
-														<input type="hidden" name="cancel_return" value=" " />
-														<input type="submit" name="submit" value="Add to cart" class="button btn" />
-													</fieldset>
-												</form>
-											</div>
-
-										</div>
-									</div>
-								</div>
-								<div class="col-md-4 product-men mt-md-0 mt-5">
-									<div class="men-pro-item simpleCart_shelfItem">
-										<div class="men-thumb-item text-center">
-											<img src="${images}/mk3.jpg" alt="">
-											<div class="men-cart-pro">
-												<div class="inner-men-cart-pro">
-													<a href="${contextRoot}/single.jsp" class="link-product-add-cart">Quick View</a>
-												</div>
-											</div>
-										</div>
-										<div class="item-info-product text-center border-top mt-4">
-											<h4 class="pt-1">
-												<a href="${contextRoot}/single.jsp">iVooMi i Series</a>
-											</h4>
-											<div class="info-product-price my-2">
-												<span class="item_price">$249.00</span>
-												<del>$260.00</del>
-											</div>
-											<span class="product-new-top">New</span>
-											<div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out">
-												<form action="#" method="post">
-													<fieldset>
-														<input type="hidden" name="cmd" value="_cart" />
-														<input type="hidden" name="add" value="1" />
-														<input type="hidden" name="business" value=" " />
-														<input type="hidden" name="item_name" value="iVooMi i Series" />
-														<input type="hidden" name="amount" value="249.00" />
-														<input type="hidden" name="discount_amount" value="1.00" />
-														<input type="hidden" name="currency_code" value="USD" />
-														<input type="hidden" name="return" value=" " />
-														<input type="hidden" name="cancel_return" value=" " />
-														<input type="submit" name="submit" value="Add to cart" class="button btn" />
-													</fieldset>
-												</form>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- //second section -->
 						<!-- 3rd section -->
 						<div class="product-sec1 px-sm-4 px-3 py-sm-5  py-3 mt-4">
 							<div class="row">
@@ -345,13 +223,13 @@
 											<img src="${images}/mk4.jpg" alt="" class="img-fluid">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
-													<a href="${contextRoot}/single.jsp" class="link-product-add-cart">Quick View</a>
+													<a href="${contextRoot}/single" class="link-product-add-cart">Quick View</a>
 												</div>
 											</div>
 										</div>
 										<div class="item-info-product text-center border-top mt-4">
 											<h4 class="pt-1">
-												<a href="${contextRoot}/single.jsp">Dell Vostro Laptop</a>
+												<a href="${contextRoot}/single">Dell Vostro Laptop</a>
 											</h4>
 											<div class="info-product-price my-2">
 												<span class="item_price">$252.00</span>
@@ -383,13 +261,13 @@
 											<img src="${images}/mk5.jpg" alt="" class="img-fluid">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
-													<a href="${contextRoot}/single.jsp" class="link-product-add-cart">Quick View</a>
+													<a href="${contextRoot}/single" class="link-product-add-cart">Quick View</a>
 												</div>
 											</div>
 										</div>
 										<div class="item-info-product text-center border-top mt-4">
 											<h4 class="pt-1">
-												<a href="${contextRoot}/single.jsp">Acer Laptop</a>
+												<a href="${contextRoot}/single">Acer Laptop</a>
 											</h4>
 											<div class="info-product-price my-2">
 												<span class="item_price">$240.00</span>
@@ -421,13 +299,13 @@
 											<img src="${images}/mk6.jpg" alt="" class="img-fluid">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
-													<a href="${contextRoot}/single.jsp" class="link-product-add-cart">Quick View</a>
+													<a href="${contextRoot}/single" class="link-product-add-cart">Quick View</a>
 												</div>
 											</div>
 										</div>
 										<div class="item-info-product text-center border-top mt-4">
 											<h4 class="pt-1">
-												<a href="${contextRoot}/single.jsp">Lenovo </a>
+												<a href="${contextRoot}/single">Lenovo </a>
 											</h4>
 											<div class="info-product-price my-2">
 												<span class="item_price">$300.00</span>
@@ -464,14 +342,14 @@
 											<img src="${images}/mk7.jpg" alt="" class="img-fluid">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
-													<a href="${contextRoot}/single.jsp" class="link-product-add-cart">Quick View</a>
+													<a href="${contextRoot}/single" class="link-product-add-cart">Quick View</a>
 												</div>
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
 										<div class="item-info-product text-center border-top mt-4">
 											<h4 class="pt-1">
-												<a href="${contextRoot}/single.jsp">Intex Power Bank</a>
+												<a href="${contextRoot}/single">Intex Power Bank</a>
 											</h4>
 											<div class="info-product-price my-2">
 												<span class="item_price">$100.00</span>
@@ -503,14 +381,14 @@
 											<img src="${images}/mk8.jpg" alt="" class="img-fluid">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
-													<a href="${contextRoot}/single.jsp" class="link-product-add-cart">Quick View</a>
+													<a href="${contextRoot}/single" class="link-product-add-cart">Quick View</a>
 												</div>
 											</div>
 										</div>
 										<span class="product-new-top">New</span>
 										<div class="item-info-product text-center border-top mt-4">
 											<h4 class="pt-1">
-												<a href="${contextRoot}/single.jsp">HP Wireless Printer</a>
+												<a href="${contextRoot}/single">HP Wireless Printer</a>
 											</h4>
 											<div class="info-product-price my-2">
 												<span class="item_price">$243.00</span>
@@ -541,13 +419,13 @@
 											<img src="${images}/mk9.jpg" alt="" class="img-fluid">
 											<div class="men-cart-pro">
 												<div class="inner-men-cart-pro">
-													<a href="${contextRoot}/single.jsp" class="link-product-add-cart">Quick View</a>
+													<a href="${contextRoot}/single" class="link-product-add-cart">Quick View</a>
 												</div>
 											</div>
 										</div>
 										<div class="item-info-product text-center border-top mt-4">
 											<h4 class="pt-1">
-												<a href="${contextRoot}/single.jsp">Alcatel Tablet</a>
+												<a href="${contextRoot}/single">Alcatel Tablet</a>
 											</h4>
 											<div class="info-product-price my-2">
 												<span class="item_price">$320.00</span>
@@ -733,50 +611,6 @@
 							</ul>
 						</div>
 						<!-- //discounts -->
-						<!-- offers -->
-						<div class="left-side border-bottom py-2">
-							<h3 class="agileits-sear-head mb-3">Offers</h3>
-							<ul>
-								<li>
-									<input type="checkbox" class="checked">
-									<span class="span">Exchange Offer</span>
-								</li>
-								<li>
-									<input type="checkbox" class="checked">
-									<span class="span">No Cost EMI</span>
-								</li>
-								<li>
-									<input type="checkbox" class="checked">
-									<span class="span">Special Price</span>
-								</li>
-							</ul>
-						</div>
-						<!-- //offers -->
-						<!-- delivery -->
-						<div class="left-side border-bottom py-2">
-							<h3 class="agileits-sear-head mb-3">Cash On Delivery</h3>
-							<ul>
-								<li>
-									<input type="checkbox" class="checked">
-									<span class="span">Eligible for Cash On Delivery</span>
-								</li>
-							</ul>
-						</div>
-						<!-- //delivery -->
-						<!-- arrivals -->
-						<div class="left-side border-bottom py-2">
-							<h3 class="agileits-sear-head mb-3">New Arrivals</h3>
-							<ul>
-								<li>
-									<input type="checkbox" class="checked">
-									<span class="span">Last 30 days</span>
-								</li>
-								<li>
-									<input type="checkbox" class="checked">
-									<span class="span">Last 90 days</span>
-								</li>
-							</ul>
-						</div>
 						<div class="left-side py-2">
 							<h3 class="agileits-sear-head mb-3">Availability</h3>
 							<ul>

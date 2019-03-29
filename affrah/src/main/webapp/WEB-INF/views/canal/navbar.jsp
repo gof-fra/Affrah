@@ -294,14 +294,13 @@
 							<div class="dropdown-menu">
 								<a class="dropdown-item" href="${contextRoot}/products">Product</a>
 								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="single.html">Single Product</a>
+								<a class="dropdown-item" href="${contextRoot}/single">Single Product</a>
 								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="checkout.html">Checkout Page</a>
+								<a class="dropdown-item" href="${contextRoot}/checkout">Checkout Page</a>
 								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="payment.html">Payment Page</a>
+								<a class="dropdown-item" href="${contextRoot}/payment">Payment Page</a>
 							</div>
 						</li>
-						
 						<li class="nav-item mr-lg-2 mb-lg-0 mb-2">
 							<a class="nav-link" href="${contextRoot}/about">About Us</a>
 						</li>
