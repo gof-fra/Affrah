@@ -17,6 +17,36 @@ public class PageController {
 		return mv;
 	}
 	
+	@RequestMapping(value = {"/footer1"})
+	public ModelAndView products1() {
+		
+		ModelAndView mv = new ModelAndView("home");
+		mv.addObject("title", "Products");
+		mv.addObject("userClickFooter1", true);
+		
+		return mv;
+	}
+	
+	@RequestMapping(value = {"/footer2"})
+	public ModelAndView products2() {
+		
+		ModelAndView mv = new ModelAndView("home");
+		mv.addObject("title", "Products");
+		mv.addObject("userClickFooter2", true);
+		
+		return mv;
+	}
+	
+	@RequestMapping(value = {"/footer3"})
+	public ModelAndView products3() {
+		
+		ModelAndView mv = new ModelAndView("home");
+		mv.addObject("title", "Products");
+		mv.addObject("userClickFooter3", true);
+		
+		return mv;
+	}
+	
 	@RequestMapping(value = {"/about"})
 	public ModelAndView about() {
 		
@@ -37,22 +67,22 @@ public class PageController {
 		return mv;
 	}
 	
+	@RequestMapping(value = {"/help"})
+	public ModelAndView help() {
+		
+		ModelAndView mv = new ModelAndView("home");
+		mv.addObject("title", "404");
+		mv.addObject("userClickHelp", true);
+		
+		return mv;
+	}
+	
 	@RequestMapping(value = {"/products"})
 	public ModelAndView products() {
 		
 		ModelAndView mv = new ModelAndView("home");
 		mv.addObject("title", " Products ");
 		mv.addObject("userClickProducts", true);
-		
-		return mv;
-	}
-	
-	@RequestMapping(value = {"/single"})
-	public ModelAndView single() {
-		
-		ModelAndView mv = new ModelAndView("home");
-		mv.addObject("title", " Product ");
-		mv.addObject("userClickSingle", true);
 		
 		return mv;
 	}
@@ -71,11 +101,22 @@ public class PageController {
 	public ModelAndView payment() {
 		
 		ModelAndView mv = new ModelAndView("home");
-		mv.addObject("title", " My Card ");
+		mv.addObject("title", " Payment ");
 		mv.addObject("userClickPayment", true);
 		
 		return mv;
 	}
+	
+	@RequestMapping(value = {"/single"})
+	public ModelAndView single() {
+		
+		ModelAndView mv = new ModelAndView("home");
+		mv.addObject("title", " Product ");
+		mv.addObject("userClickSingle", true);
+		
+		return mv;
+	}
+	
 	
 }
 	

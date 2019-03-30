@@ -18,7 +18,7 @@
 								<i class="fas fa-truck mr-2"></i>Track Order</a>
 						</li>
 						<li class="text-center border-right text-white">
-							<i class="fas fa-phone mr-2"></i> 001 234 5678
+							<i class="fas fa-phone mr-2"></i> +216 56 326 444
 						</li>
 						<li class="text-center border-right text-white">
 							<a href="#" data-toggle="modal" data-target="#exampleModal" class="text-white">
@@ -283,9 +283,6 @@
 									</div>
 								</div>
 							</div>
-						</li>
-						<li class="nav-item mr-lg-2 mb-lg-0 mb-2">
-							<a class="nav-link" href="product.html">New Arrivals</a>
 						</li>
 						<li class="nav-item dropdown mr-lg-2 mb-lg-0 mb-2">
 							<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

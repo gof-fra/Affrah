@@ -3,7 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 
-<spring:url var="css" value="/resources//css" />
+<spring:url var="css" value="/resources/css" />
 <spring:url var="js" value="/resources/js" />
 <spring:url var="images" value="/resources/images" />
 
@@ -11,12 +11,11 @@
 <c:set var="contextRoot" value="${pageContext.request.contextPath}" />
 
 
-
 <!DOCTYPE html>
 <html lang="zxx">
 
 <head>
-	<title>Affrah</title>
+	<title>Electro Store Ecommerce Category Bootstrap Responsive Web Template | Payment :: w3layouts</title>
 	<!-- Meta tag Keywords -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8" />
@@ -56,9 +55,6 @@
 
 <body>
 	<!-- top-header -->
-	
-	<!-- //navigation -->
-
 	<!-- banner-2 -->
 	<div class="page-head_agile_info_w3l">
 
@@ -90,53 +86,14 @@
 				<!--Horizontal Tab-->
 				<div id="parentHorizontalTab">
 					<ul class="resp-tabs-list hor_1">
-						<li>Credit/Debit</li>
 						<li>Paypal Account</li>
 					</ul>
 					<div class="resp-tabs-container hor_1">
-
-						<div>
-							<form action="#" method="post" class="creditly-card-form agileinfo_form">
-								<div class="creditly-wrapper wthree, w3_agileits_wrapper">
-									<div class="credit-card-wrapper">
-										<div class="first-row form-group">
-											<div class="controls">
-												<label class="control-label">Name on Card</label>
-												<input class="billing-address-name form-control" type="text" name="name" placeholder="John Smith">
-											</div>
-											<div class="w3_agileits_card_number_grids my-3">
-												<div class="w3_agileits_card_number_grid_left">
-													<div class="controls">
-														<label class="control-label">Card Number</label>
-														<input class="number credit-card-number form-control" type="text" name="number" inputmode="numeric" autocomplete="cc-number"
-														    autocompletetype="cc-number" x-autocompletetype="cc-number" placeholder="&#149;&#149;&#149;&#149; &#149;&#149;&#149;&#149; &#149;&#149;&#149;&#149; &#149;&#149;&#149;&#149;">
-													</div>
-												</div>
-												<div class="w3_agileits_card_number_grid_right mt-2">
-													<div class="controls">
-														<label class="control-label">CVV</label>
-														<input class="security-code form-control" Â· inputmode="numeric" type="text" name="security-code" placeholder="&#149;&#149;&#149;">
-													</div>
-												</div>
-												<div class="clear"> </div>
-											</div>
-											<div class="controls">
-												<label class="control-label">Expiration Date</label>
-												<input class="expiration-month-and-year form-control" type="text" name="expiration-month-and-year" placeholder="MM / YY">
-											</div>
-										</div>
-										<button class="submit mt-3">
-											<span>Make a payment </span>
-										</button>
-									</div>
-								</div>
-							</form>
-						</div>
 						<div>
 							<div id="tab4" class="tab-grid" style="display: block;">
 								<div class="row">
 									<div class="col-md-6 pay-forms">
-										<img class="pp-img" src="images/paypal.png" alt="Image Alternative text" title="Image Title">
+										<img class="pp-img" src="${images}/paypal.png" alt="Image Alternative text" title="Image Title">
 										<p>Important: You will be redirected to PayPal's website to securely complete your payment.</p>
 										<a class="btn btn-primary">Checkout via Paypal</a>
 									</div>
@@ -184,7 +141,7 @@
 			</div>
 		</div>
 	</div>
-	<!-- //copyright -->
+	<!-- //payment page -->
 
 	<!-- js-files -->
 	<!-- jquery -->
@@ -272,7 +229,7 @@
 	<!-- //password-script -->
 
 	<!-- easy-responsive-tabs -->
-	<link rel="stylesheet" type="text/css" href="${css}/easy-responsive-tabs.css " />
+	<link rel="stylesheet" type="text/css" href="${css}/easy-responsive-tabs.css" />
 	<script src="${js}/easyResponsiveTabs.js"></script>
 
 	<script>

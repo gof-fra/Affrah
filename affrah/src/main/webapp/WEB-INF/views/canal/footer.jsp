@@ -9,22 +9,13 @@
 						<h3 class="text-white font-weight-bold mb-3">Categories</h3>
 						<ul>
 							<li class="mb-3">
-								<a href="product.html">Mobiles </a>
+								<a href="${contextRoot}/footer1">Mobiles </a>
 							</li>
 							<li class="mb-3">
-								<a href="product.html">Computers</a>
+								<a href="${contextRoot}/footer2">Computers</a>
 							</li>
 							<li class="mb-3">
-								<a href="product.html">TV, Audio</a>
-							</li>
-							<li class="mb-3">
-								<a href="product2.html">Smartphones</a>
-							</li>
-							<li class="mb-3">
-								<a href="product.html">Washing Machines</a>
-							</li>
-							<li>
-								<a href="product2.html">Refrigerators</a>
+								<a href="${contextRoot}/footer3">TV, Audio</a>
 							</li>
 						</ul>
 					</div>
@@ -34,22 +25,13 @@
 						<h3 class="text-white font-weight-bold mb-3">Quick Links</h3>
 						<ul>
 							<li class="mb-3">
-								<a href="about.html">About Us</a>
+								<a href="${contextRoot}/about">About Us</a>
 							</li>
 							<li class="mb-3">
-								<a href="contact.html">Contact Us</a>
+								<a href="${contextRoot}/contact">Contact Us</a>
 							</li>
 							<li class="mb-3">
-								<a href="help.html">Help</a>
-							</li>
-							<li class="mb-3">
-								<a href="faqs.html">Faqs</a>
-							</li>
-							<li class="mb-3">
-								<a href="terms.html">Terms of use</a>
-							</li>
-							<li>
-								<a href="privacy.html">Privacy Policy</a>
+								<a href="${contextRoot}/help">Help</a>
 							</li>
 						</ul>
 					</div>
@@ -57,25 +39,18 @@
 						<h3 class="text-white font-weight-bold mb-3">Get in Touch</h3>
 						<ul>
 							<li class="mb-3">
-								<i class="fas fa-map-marker"></i> 123 Sebastian, USA.</li>
+								<i class="fas fa-map-marker"></i> 1PO Box 8568954 Av. Bourguiba, Tunisie</li>
 							<li class="mb-3">
-								<i class="fas fa-mobile"></i> 333 222 3333 </li>
-							<li class="mb-3">
-								<i class="fas fa-phone"></i> +222 11 4444 </li>
+								<i class="fas fa-mobile"></i> +(216) 56 326 444</li>
 							<li class="mb-3">
 								<i class="fas fa-envelope-open"></i>
 								<a href="mailto:example@mail.com"> mail 1@example.com</a>
-							</li>
-							<li>
-								<i class="fas fa-envelope-open"></i>
-								<a href="mailto:example@mail.com"> mail 2@example.com</a>
 							</li>
 						</ul>
 					</div>
 					<div class="col-md-3 col-sm-6 footer-grids w3l-agileits mt-md-0 mt-4">
 						<!-- newsletter -->
 						<h3 class="text-white font-weight-bold mb-3">Newsletter</h3>
-						<p class="mb-3">Free Delivery on your first order!</p>
 						<form action="#" method="post">
 							<div class="form-group">
 								<input type="email" class="form-control" placeholder="Email" name="email" required="">
@@ -117,8 +92,8 @@
 	<!-- copyright -->
 	<div class="copy-right py-3">
 		<div class="container">
-			<p class="text-center text-white">© 2018 Electro Store. All rights reserved | Design by
-				<a href="http://w3layouts.com"> W3layouts.</a>
+			<p class="text-center text-white">© 2019 Affrah Shop. All rights reserved | Design by
+				<a href="#"> digital-intelligent-agency</a>
 			</p>
 		</div>
 	</div>

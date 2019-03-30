@@ -3,7 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 
-<spring:url var="css" value="/resources//css" />
+<spring:url var="css" value="/resources/css" />
 <spring:url var="js" value="/resources/js" />
 <spring:url var="images" value="/resources/images" />
 
@@ -120,16 +120,32 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 		<%@ include file = "products.jsp" %>
 	</c:if>
 	
-	<c:if test="${userClickSingle == true }">
-		<%@ include file = "single.jsp" %>
-	</c:if>
-	
 	<c:if test="${userClickCheckout == true }">
 		<%@ include file = "checkout.jsp" %>
 	</c:if>
 	
-	<c:if test="${userClickPayment == true }">
+	<c:if test="${userClickPayment == true}">
 		<%@ include file = "payment.jsp" %>
+	</c:if>
+	
+	<c:if test="${userClickSingle == true}">
+		<%@ include file = "single.jsp" %>
+	</c:if>
+	
+	<c:if test="${userClickHelp == true}">
+		<%@ include file = "help.jsp" %>
+	</c:if>
+	
+	<c:if test="${userClickFooter1 == true}">
+		<%@ include file = "products1.jsp" %>
+	</c:if>
+	
+	<c:if test="${userClickFooter2 == true}">
+		<%@ include file = "products2.jsp" %>
+	</c:if>
+	
+	<c:if test="${userClickFooter3 == true}">
+		<%@ include file = "products3.jsp" %>
 	</c:if>
 	
 	

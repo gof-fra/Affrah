@@ -3,7 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 
-<spring:url var="css" value="/resources//css" />
+<spring:url var="css" value="/resources/css" />
 <spring:url var="js" value="/resources/js" />
 <spring:url var="images" value="/resources/images" />
 
@@ -91,8 +91,8 @@
 							<i class="fas fa-map-marker-alt rounded-circle"></i>
 						</div>
 						<h4 class="font-weight-bold mt-sm-4 mt-3 mb-3">Address</h4>
-						<p>1PO Box 8568954 Melbourne
-							<label>Australia.</label>
+						<p>1PO Box 8568954 Av. Bourguiba
+							<label>Tunisie.</label>
 						</p>
 					</div>
 				</div>
@@ -102,8 +102,8 @@
 							<i class="fas fa-phone rounded-circle"></i>
 						</div>
 						<h4 class="font-weight-bold mt-sm-4 mt-3 mb-3">Call Us</h4>
-						<p>+(0121) 121 121
-							<label>+(0121) 121 122</label>
+						<p>
+							<label>+(216) 56 326 444</label>
 						</p>
 					</div>
 				</div>
@@ -115,9 +115,6 @@
 						<h4 class="font-weight-bold mt-sm-4 mt-3 mb-3">Email</h4>
 						<p>
 							<a href="mailto:info@example.com">info@example1.com</a>
-							<label>
-								<a href="mailto:info@example.com">info@example2.com</a>
-							</label>
 						</p>
 					</div>
 				</div>
