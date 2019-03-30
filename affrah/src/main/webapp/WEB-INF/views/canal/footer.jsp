@@ -39,11 +39,13 @@
 						<h3 class="text-white font-weight-bold mb-3">Get in Touch</h3>
 						<ul>
 							<li class="mb-3">
-								<i class="fas fa-map-marker"></i> 1PO Box 8568954 Av. Bourguiba, Tunisie</li>
+								<img src="${images}/12.png" alt=" " class="img-fluid">
+								<i class="fas "></i>Av. Bourguiba, Tunisie</li>
 							<li class="mb-3">
-								<i class="fas fa-mobile"></i> +(216) 56 326 444</li>
+								<img src="${images}/11.png" alt=" " class="img-fluid">
+								<i class="fas "></i> +(216) 56 326 444</li>
 							<li class="mb-3">
-								<i class="fas fa-envelope-open"></i>
+								<img src="${images}/10.png" alt=" " class="img-fluid">
 								<a href="mailto:example@mail.com"> mail 1@example.com</a>
 							</li>
 						</ul>
@@ -65,17 +67,20 @@
 								<ul>
 									<li>
 										<a class="icon fb" href="#">
-											<i class="fab fa-facebook-f"></i>
+											<img src="${images}/7.png" alt=" " class="img-fluid">
+											<i class="fab "></i>
 										</a>
 									</li>
 									<li>
 										<a class="icon tw" href="#">
-											<i class="fab fa-twitter"></i>
+											<img src="${images}/9.png" alt=" " class="img-fluid">
+											<i class="fab "></i>
 										</a>
 									</li>
 									<li>
 										<a class="icon gp" href="#">
-											<i class="fab fa-google-plus-g"></i>
+											<img src="${images}/8.png" alt=" " class="img-fluid">
+											<i class="fab "></i>
 										</a>
 									</li>
 								</ul>
