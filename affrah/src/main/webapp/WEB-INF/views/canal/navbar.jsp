@@ -227,56 +227,38 @@
 										<div class="col-sm-6 multi-gd-img">
 											<ul class="multi-column-dropdown">
 												<li>
-													<a href="product.html">All Mobile Phones</a>
+													<a href="${contextRoot}/products">All Mobile Phones</a>
 												</li>
 												<li>
-													<a href="product.html">All Mobile Accessories</a>
+													<a href="${contextRoot}/products">All Mobile Accessories</a>
 												</li>
 												<li>
-													<a href="product.html">Cases & Covers</a>
+													<a href="${contextRoot}/products">Power Banks</a>
 												</li>
 												<li>
-													<a href="product.html">Screen Protectors</a>
+													<a href="${contextRoot}/products">Tablets</a>
 												</li>
 												<li>
-													<a href="product.html">Power Banks</a>
-												</li>
-												<li>
-													<a href="product.html">All Certified Refurbished</a>
-												</li>
-												<li>
-													<a href="product.html">Tablets</a>
-												</li>
-												<li>
-													<a href="product.html">Wearable Devices</a>
-												</li>
-												<li>
-													<a href="product.html">Smart Home</a>
+													<a href="${contextRoot}/products">Smart Home</a>
 												</li>
 											</ul>
 										</div>
 										<div class="col-sm-6 multi-gd-img">
 											<ul class="multi-column-dropdown">
 												<li>
-													<a href="product.html">Laptops</a>
+													<a href="${contextRoot}/products">Laptops</a>
 												</li>
 												<li>
-													<a href="product.html">Drives & Storage</a>
+													<a href="${contextRoot}/products">Drives & Storage</a>
 												</li>
 												<li>
-													<a href="product.html">Printers & Ink</a>
+													<a href="${contextRoot}/products">Networking Devices</a>
 												</li>
 												<li>
-													<a href="product.html">Networking Devices</a>
+													<a href="${contextRoot}/products">Computer Accessories</a>
 												</li>
 												<li>
-													<a href="product.html">Computer Accessories</a>
-												</li>
-												<li>
-													<a href="product.html">Game Zone</a>
-												</li>
-												<li>
-													<a href="product.html">Software</a>
+													<a href="${contextRoot}/products">Software</a>
 												</li>
 											</ul>
 										</div>
