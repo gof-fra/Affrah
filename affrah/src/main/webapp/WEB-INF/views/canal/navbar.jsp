@@ -1,3 +1,15 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+
+<spring:url var="css" value="/resources/css" />
+<spring:url var="js" value="/resources/js" />
+<spring:url var="images" value="/resources/images" />
+
+
+<c:set var="contextRoot" value="${pageContext.request.contextPath}" />
+
 	<div class="agile-main-top">
 		<div class="container-fluid">
 			<div class="row main-top-w3l py-2">
@@ -28,7 +40,7 @@
 							</a>
 						</li>
 						<li class="text-center border-right text-white">
-							<a data-toggle="modal" data-target="#exampleModal" class="text-white">
+							<a href="#" data-toggle="modal" data-target="#exampleModal" class="text-white">
 								<img src="${images}/5.png" alt=" " class="img-fluid">
 								<i class="fas mr-2"></i> Log In 
 							</a>
@@ -51,7 +63,9 @@
 	<div id="small-dialog1" class="mfp-hide">
 		<div class="select-city">
 			<h3>
-				<i class="fas fa-map-marker"></i> Please Select Your Location</h3>
+				<i class="fas ">
+					<img src="${images}/12.png" alt=" " class="img-fluid">
+				</i> Please Select Your Location</h3>
 			<select class="list_of_cities">
 				<optgroup label="Popular Cities">
 					<option selected style="display:none;color:#eee;">Select City</option>
@@ -61,7 +75,7 @@
 					<option>Ariana</option>
 				</optgroup>
 				<optgroup label="Sfax">
-					<option>Haute cité</option>
+					<option>Haute citÃ©</option>
 					<option>Av. Bourguiba</option>
 				</optgroup>
 			</select>
@@ -184,9 +198,9 @@
 								<form action="#" method="post" class="last">
 									<input type="hidden" name="cmd" value="_cart">
 									<input type="hidden" name="display" value="1">
-									<button class="btn w3view-cart" type="submit" name="submit" value="">
+									<button class="btn " type="submit" name="submit" value="">
 										<img src="${images}/2.png" alt=" " class="img-fluid">
-										<i class="fas "></i>
+										<i class="font-weight-yellow font-italic">Panier</i>
 									</button>
 								</form>
 							</div>
@@ -204,19 +218,16 @@
 		<div class="container">
 			<nav class="navbar navbar-expand-lg navbar-light bg-light">
 				<div class="agileits-navi_search">
-					<form action="#" method="post">
-						<select id="agileinfo-nav_search" name="agileinfo_search" class="border" required="">
-							<option value="">All Categories</option>
-							<option value="Televisions">Televisions</option>
-							<option value="Headphones">Headphones</option>
-							<option value="Computers">Computers</option>
-							<option value="Mobiles">Mobiles</option>
-							<option value="Fruits &amp; Vegetables">Tv &amp; Video</option>
-							<option value="iPad & Tablets">iPad & Tablets</option>
-							<option value="Cameras & Camcorders">Cameras & Camcorders</option>
-							<option value="Home Audio & Theater">Home Audio & Theater</option>
-						</select>
-					</form>
+					<div class="dropdown show" id="agileinfo-nav_search" name="agileinfo_search" class="border" required="">
+					  <a class="btn btn-info dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    All Categories
+					  </a>				
+					  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+					    	<c:forEach items="${categories}" var="category">
+								<a href="${contextRoot}/show/category/${category.id}/single" class="list-group-item">${category.name}</a>
+							</c:forEach>
+					  </div>
+					</div>
 				</div>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
 				    aria-expanded="false" aria-label="Toggle navigation">
@@ -251,9 +262,6 @@
 												<li>
 													<a href="${contextRoot}/products">Tablets</a>
 												</li>
-												<li>
-													<a href="${contextRoot}/products">Smart Home</a>
-												</li>
 											</ul>
 										</div>
 										<div class="col-sm-6 multi-gd-img">
@@ -270,9 +278,6 @@
 												<li>
 													<a href="${contextRoot}/products">Computer Accessories</a>
 												</li>
-												<li>
-													<a href="${contextRoot}/products">Software</a>
-												</li>
 											</ul>
 										</div>
 									</div>
@@ -284,7 +289,7 @@
 								Pages
 							</a>
 							<div class="dropdown-menu">
-								<a class="dropdown-item" href="${contextRoot}/products">Product</a>
+								<a class="dropdown-item" href="${contextRoot}/show/all/products">Product</a>
 								<div class="dropdown-divider"></div>
 								<a class="dropdown-item" href="${contextRoot}/single">Single Product</a>
 								<div class="dropdown-divider"></div>

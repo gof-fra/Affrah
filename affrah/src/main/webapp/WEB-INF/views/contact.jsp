@@ -88,7 +88,9 @@
 				<div class="col-sm-4 contact-grid agileinfo-6 mt-sm-0 mt-2">
 					<div class="contact-grid1 text-center">
 						<div class="con-ic">
-							<i class="fas fa-map-marker-alt rounded-circle"></i>
+							<i class="fas rounded-circle">
+								<img src="${images}/12.png" alt=" " class="img-fluid">
+							</i>
 						</div>
 						<h4 class="font-weight-bold mt-sm-4 mt-3 mb-3">Address</h4>
 						<p>1PO Box 8568954 Av. Bourguiba
@@ -99,7 +101,9 @@
 				<div class="col-sm-4 contact-grid agileinfo-6 my-sm-0 my-4">
 					<div class="contact-grid1 text-center">
 						<div class="con-ic">
-							<i class="fas fa-phone rounded-circle"></i>
+							<i class="fas rounded-circle">
+								<img src="${images}/11.png" alt=" " class="img-fluid">
+							</i>
 						</div>
 						<h4 class="font-weight-bold mt-sm-4 mt-3 mb-3">Call Us</h4>
 						<p>
@@ -110,7 +114,9 @@
 				<div class="col-sm-4 contact-grid agileinfo-6">
 					<div class="contact-grid1 text-center">
 						<div class="con-ic">
-							<i class="fas fa-envelope-open rounded-circle"></i>
+						<i class="fas rounded-circle">
+							<img src="${images}/10.png" alt=" " class="img-fluid">
+						</i>
 						</div>
 						<h4 class="font-weight-bold mt-sm-4 mt-3 mb-3">Email</h4>
 						<p>

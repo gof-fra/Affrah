@@ -1,122 +1,128 @@
 package com.haggar.affrah.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
+
+import com.haggar.affrahbackend.dao.CategoryDAO;
+import com.haggar.affrahbackend.dto.Category;
 
 @Controller
 public class PageController {
 	
+	@Autowired
+	private CategoryDAO categoryDAO;
+	
 	@RequestMapping(value = {"/", "/home", "/index"})
-	public ModelAndView index() {
-		
+	public ModelAndView index() {		
 		ModelAndView mv = new ModelAndView("home");
 		mv.addObject("title", "Home");
-		mv.addObject("userClickHome", true);
 		
+		// passing the list of categories
+		mv.addObject("categories", categoryDAO.list());
+		
+		mv.addObject("userClickHome", true);		
 		return mv;
 	}
 	
 	@RequestMapping(value = {"/footer1"})
-	public ModelAndView products1() {
-		
+	public ModelAndView products1() {		
 		ModelAndView mv = new ModelAndView("home");
 		mv.addObject("title", "Products");
-		mv.addObject("userClickFooter1", true);
-		
+		mv.addObject("userClickFooter1", true);		
 		return mv;
 	}
 	
 	@RequestMapping(value = {"/footer2"})
-	public ModelAndView products2() {
-		
+	public ModelAndView products2() {		
 		ModelAndView mv = new ModelAndView("home");
 		mv.addObject("title", "Products");
-		mv.addObject("userClickFooter2", true);
-		
+		mv.addObject("userClickFooter2", true);		
 		return mv;
 	}
 	
 	@RequestMapping(value = {"/footer3"})
-	public ModelAndView products3() {
-		
+	public ModelAndView products3() {		
 		ModelAndView mv = new ModelAndView("home");
 		mv.addObject("title", "Products");
-		mv.addObject("userClickFooter3", true);
-		
+		mv.addObject("userClickFooter3", true);		
 		return mv;
 	}
 	
 	@RequestMapping(value = {"/about"})
-	public ModelAndView about() {
-		
+	public ModelAndView about() {	
 		ModelAndView mv = new ModelAndView("home");
 		mv.addObject("title", "About");
-		mv.addObject("userClickAbout", true);
-		
+		mv.addObject("userClickAbout", true);		
 		return mv;
 	}
 	
 	@RequestMapping(value = {"/contact"})
-	public ModelAndView contact() {
-		
+	public ModelAndView contact() {		
 		ModelAndView mv = new ModelAndView("home");
 		mv.addObject("title", "Contact");
-		mv.addObject("userClickContact", true);
-		
+		mv.addObject("userClickContact", true);		
 		return mv;
 	}
 	
 	@RequestMapping(value = {"/help"})
-	public ModelAndView help() {
-		
+	public ModelAndView help() {		
 		ModelAndView mv = new ModelAndView("home");
 		mv.addObject("title", "404");
-		mv.addObject("userClickHelp", true);
-		
-		return mv;
-	}
-	
-	@RequestMapping(value = {"/products"})
-	public ModelAndView products() {
-		
-		ModelAndView mv = new ModelAndView("home");
-		mv.addObject("title", " Products ");
-		mv.addObject("userClickProducts", true);
-		
+		mv.addObject("userClickHelp", true);		
 		return mv;
 	}
 	
 	@RequestMapping(value = {"/checkout"})
-	public ModelAndView checkout() {
-		
+	public ModelAndView checkout() {		
 		ModelAndView mv = new ModelAndView("home");
 		mv.addObject("title", " My Card ");
-		mv.addObject("userClickCheckout", true);
-		
+		mv.addObject("userClickCheckout", true);		
 		return mv;
 	}
 	
 	@RequestMapping(value = {"/payment"})
-	public ModelAndView payment() {
-		
+	public ModelAndView payment() {		
 		ModelAndView mv = new ModelAndView("home");
 		mv.addObject("title", " Payment ");
-		mv.addObject("userClickPayment", true);
-		
+		mv.addObject("userClickPayment", true);		
 		return mv;
 	}
 	
-	@RequestMapping(value = {"/single"})
-	public ModelAndView single() {
-		
+	@RequestMapping(value = {"/show/all/products"})
+	public ModelAndView products() {		
 		ModelAndView mv = new ModelAndView("home");
-		mv.addObject("title", " Product ");
-		mv.addObject("userClickSingle", true);
+		mv.addObject("title", " Products ");
 		
+		// passing the list of categories
+		mv.addObject("categories", categoryDAO.list());
+		
+		mv.addObject("userClickProducts", true);		
 		return mv;
 	}
 	
+	@RequestMapping(value = {"/show/category/{id}/single"})
+	public ModelAndView single(@PathVariable("id") int id) {		
+		ModelAndView mv = new ModelAndView("home");
+		
+		// categoryDAO to fetch a single category
+		Category category = null;
+		
+		category = categoryDAO.get(id);
+		
+		mv.addObject("title", category.getName());
+		
+		// passing the list of category
+		mv.addObject("categories", categoryDAO.list());
+		
+		// passing the single category object
+		mv.addObject("category", category);
+		
+		mv.addObject("userClickSingle", true);		
+		return mv;
+	}
 	
 }
 	

@@ -98,7 +98,7 @@
 	<div class="copy-right py-3">
 		<div class="container">
 			<p class="text-center text-white">© 2019 Affrah Shop. All rights reserved | Design by
-				<a href="#"> digital-intelligent-agency</a>
+				<a href="#"> digital-iTech-agency</a>
 			</p>
 		</div>
 	</div>

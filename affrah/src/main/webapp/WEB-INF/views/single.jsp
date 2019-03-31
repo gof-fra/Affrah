@@ -65,15 +65,20 @@
 	<!-- page -->
 	<div class="services-breadcrumb">
 		<div class="agile_inner_breadcrumb">
-			<div class="container">
-				<ul class="w3_short">
-					<li>
-						<a href="${contextRoot}/home">Home</a>
-						<i>|</i>
-					</li>
-					<li>Single Product </li>
-				</ul>
-			</div>
+			<c:if test="${userClickSingle == true}">
+				<div class="container">
+					<ul class="w3_short">
+						<li>
+							<a href="${contextRoot}/home">Home</a>
+							<i>|</i>
+						</li>
+						<li>Single Product 
+							<i>|</i>
+						</li>
+						<li class="active"> ${category.name}</li>
+					</ul>
+				</div>
+			</c:if>
 		</div>
 	</div>
 	<!-- //page -->
@@ -91,15 +96,15 @@
 					<div class="grid images_3_of_2">
 						<div class="flexslider">
 							<ul class="slides">
-								<li data-thumb="images/si1.jpg">
+								<li data-thumb="${images}/si1.jpg">
 									<div class="thumb-image">
 										<img src="${images}/si1.jpg" data-imagezoom="true" class="img-fluid" alt=""> </div>
 								</li>
-								<li data-thumb="images/si2.jpg">
+								<li data-thumb="${images}/si2.jpg">
 									<div class="thumb-image">
 										<img src="${images}/si2.jpg" data-imagezoom="true" class="img-fluid" alt=""> </div>
 								</li>
-								<li data-thumb="images/si3.jpg">
+								<li data-thumb="${images}/si3.jpg">
 									<div class="thumb-image">
 										<img src="${images}/si3.jpg" data-imagezoom="true" class="img-fluid" alt=""> </div>
 								</li>
@@ -127,14 +132,13 @@
 							<li class="mb-3">
 								EMIs from $655/month.
 							</li>
-							<li class="mb-3">
-								Bank OfferExtra 5% off* with Axis Bank Buzz Credit CardT&C
-							</li>
 						</ul>
 					</div>
 					<div class="product-single-w3l">
 						<p class="my-3">
-							<i class="far fa-hand-point-right mr-2"></i>
+							<i class="far mr-2">
+								<img src="${images}/15.png" alt=" " class="img-fluid">
+							</i>
 							<label>1 Year</label>Manufacturer Warranty</p>
 						<ul>
 							<li class="mb-1">
@@ -154,7 +158,9 @@
 							</li>
 						</ul>
 						<p class="my-sm-4 my-3">
-							<i class="fas fa-retweet mr-3"></i>Net banking & Credit/ Debit/ ATM card
+							<i class="fas ">
+								<img src="${images}/16.png" alt=" " class="img-fluid">
+							</i>Net banking & Credit/ Debit/ ATM card
 						</p>
 					</div>
 					<div class="occasion-cart">

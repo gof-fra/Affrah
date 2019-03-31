@@ -65,15 +65,20 @@
 	<!-- page -->
 	<div class="services-breadcrumb">
 		<div class="agile_inner_breadcrumb">
-			<div class="container">
-				<ul class="w3_short">
-					<li>
-						<a href="${contextRoot}/home">Home</a>
-						<i>|</i>
-					</li>
-					<li>Electronics</li>
-				</ul>
-			</div>
+			<c:if test="${userClickProducts == true}">
+				<div class="container">
+					<ul class="w3_short">
+						<li>
+							<a href="${contextRoot}/home">Home</a>
+							<i>|</i>
+						</li>
+						<li>Electronics
+							<i>|</i>
+						</li>
+						<li>All Products</li>
+					</ul>
+				</div>
+			</c:if>
 		</div>
 	</div>
 	<!-- //page -->
