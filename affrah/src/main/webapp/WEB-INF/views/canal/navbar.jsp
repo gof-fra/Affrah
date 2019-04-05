@@ -29,13 +29,13 @@
 						</li> 
 						<li class="text-center border-right text-white">
 							<a class="play-icon popup-with-zoom-anim text-white" href="#small-dialog1">
-								<i class="fas mr-2"></i>Select Location
+								<i class="fas mr-2"></i> Location
 								<img src="${images}/3.png" alt=" " class="img-fluid">
 								</a>
 						</li>
 						<li class="text-center border-right text-white">
 							<a>
-							<i class="fas mr-2"></i> +216 56 326 444
+							<i class="fas mr-2"></i>  56 326 444
 							<img src="${images}/4.png" alt=" " class="img-fluid">
 							</a>
 						</li>

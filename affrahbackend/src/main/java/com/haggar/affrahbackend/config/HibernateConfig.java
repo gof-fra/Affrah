@@ -14,6 +14,7 @@ import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBuilder;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+
 @Configuration
 @ComponentScan(basePackages={"com.haggar.affrahbackend.dto"})
 @EnableTransactionManagement
@@ -30,11 +31,12 @@ public class HibernateConfig {
 	// dataSource bean w'll be available
 	
 	@Bean
-	private DataSource getDataSource() {
+	public DataSource getDataSource() {
 		
 		BasicDataSource dataSource = new BasicDataSource();
 		
 		// providing the database connection information
+		
 		dataSource.setDriverClassName(DATABASE_DRIVER);
 		dataSource.setUrl(DATABASE_URL);
 		dataSource.setUsername(DATABASE_USERNAME);
@@ -48,15 +50,14 @@ public class HibernateConfig {
 	public SessionFactory getSessionFactory(DataSource dataSource) {
 		
 		LocalSessionFactoryBuilder builder = new LocalSessionFactoryBuilder(dataSource);
-		
 		builder.addProperties(getHibernateProperties());
 		builder.scanPackages("com.haggar.affrahbackend.dto");
 		
 		return builder.buildSessionFactory();
-		
 	}
 	
 	// all Hibernate properties w'll be return in this method
+	
 	private Properties getHibernateProperties() {
 		
 		Properties properties = new Properties();

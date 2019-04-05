@@ -1,11 +1,14 @@
 package com.haggar.affrahbackend.dto;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Category {
 	
 	
-	/*
-	 * Private fields
-	 *****/
+	/******************
+	 * Private fields *
+	 ******************/
 	
 	private int id;
 	private String name;
@@ -47,6 +50,11 @@ public class Category {
 	}
 	
 	
+	@Override
+	public String toString() {
+		return "Category [id=" + id + ", name=" + name + ", description=" + description + ", imageUrl=" + imageUrl
+				+ ", active=" + active + "]";
+	}
 	
 
 }
