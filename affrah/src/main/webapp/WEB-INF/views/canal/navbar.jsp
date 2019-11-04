@@ -35,7 +35,7 @@
 						</li>
 						<li class="text-center border-right text-white">
 							<a>
-							<i class="fas mr-2"></i>  56 326 444
+							<i class="fas mr-2"></i>  66 21 31 50
 							<img src="${images}/4.png" alt=" " class="img-fluid">
 							</a>
 						</li>
@@ -224,7 +224,7 @@
 					  </a>				
 					  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
 					    	<c:forEach items="${categories}" var="category">
-								<a href="${contextRoot}/show/category/${category.id}/single" class="list-group-item">${category.name}</a>
+								<a href="${contextRoot}/show/category/${category.id}/single" class="list-group-item" id="a_${category.name}">${category.name}</a>
 							</c:forEach>
 					  </div>
 					</div>
@@ -236,7 +236,7 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav ml-auto text-center mr-xl-5">
 						<li class="nav-item active mr-lg-2 mb-lg-0 mb-2">
-							<a class="nav-link" href="${contextRoot}/home">Home
+							<a class="nav-link" href="${contextRoot}/home" id="home">Home
 								<span class="sr-only">(current)</span>
 							</a>
 						</li>
@@ -284,25 +284,25 @@
 								</div>
 							</div>
 						</li>
-						<li class="nav-item dropdown mr-lg-2 mb-lg-0 mb-2">
+						<li class="nav-item dropdown mr-lg-2 mb-lg-0 mb-2" id="">
 							<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								Pages
 							</a>
 							<div class="dropdown-menu">
-								<a class="dropdown-item" href="${contextRoot}/show/all/products">Product</a>
+								<a class="dropdown-item" href="${contextRoot}/show/all/products" id="products">Product</a>
 								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="${contextRoot}/single">Single Product</a>
+								<a class="dropdown-item" href="${contextRoot}/single" id="single">Single Product</a>
 								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="${contextRoot}/checkout">Checkout Page</a>
+								<a class="dropdown-item" href="${contextRoot}/checkout" id="checkout">Checkout Page</a>
 								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="${contextRoot}/payment">Payment Page</a>
+								<a class="dropdown-item" href="${contextRoot}/payment" id="payment">Payment Page</a>
 							</div>
 						</li>
-						<li class="nav-item mr-lg-2 mb-lg-0 mb-2">
-							<a class="nav-link" href="${contextRoot}/about">About Us</a>
+						<li class="nav-item mr-lg-2 mb-lg-0 mb-2" id="">
+							<a class="nav-link" href="${contextRoot}/about" id="about">About Us</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="${contextRoot}/contact">Contact Us</a>
+						<li class="nav-item" id="">
+							<a class="nav-link" href="${contextRoot}/contact" id="contact">Contact Us</a>
 						</li>
 					</ul>
 				</div>

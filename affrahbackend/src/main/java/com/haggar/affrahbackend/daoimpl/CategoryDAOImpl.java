@@ -14,65 +14,88 @@ import com.haggar.affrahbackend.dto.Category;
 @Repository("categoryDAO")
 public class CategoryDAOImpl implements CategoryDAO {
 	
-	
+	@Autowired
+	private SessionFactory sessionFactory;
+
 	private static List<Category> categories = new ArrayList<>();
-	
+
 	static {
-		
+
 		Category category = new Category();
-		
+
 		// adding first category
 		category.setId(1);
 		category.setName("Tablet");
 		category.setDescription("Some description for tablet");
 		category.setImageUrl("CAT_1.png");
-		
+
 		categories.add(category);
-		
-		
+
 		// adding second category
 		category = new Category();
 		category.setId(2);
 		category.setName("Power bank");
 		category.setDescription("Some description for power bank");
 		category.setImageUrl("CAT_2.png");
-		
+
 		categories.add(category);
-		
+
 		// adding third category
 		category = new Category();
 		category.setId(3);
 		category.setName("Printer");
 		category.setDescription("Some description for printer");
 		category.setImageUrl("CAT_3.png");
-		
+
 		categories.add(category);
-		
+
 		// adding fourth category
 		category = new Category();
 		category.setId(4);
 		category.setName("Laptop");
 		category.setDescription("Some description for computer");
 		category.setImageUrl("CAT_4.png");
+
+		categories.add(category);
+		
+		// adding the fifth category
+		category = new Category();
+		category.setId(5);
+		category.setName("Phone");
+		category.setDescription("Here are some description for mobile phone");
+		category.setImageUrl("CAT_5.png");
 		
 		categories.add(category);
 	}
 
 	@Override
 	public List<Category> list() {
-		
+
 		return categories;
 	}
 
 	@Override
-	public Category get(int id) {		
+	public Category get(int id) {
 		// loop
-		for(Category category : categories) {
-			if(category.getId() == id) return category;
-		}		
+		for (Category category : categories) {
+			if (category.getId() == id)
+				return category;
+		}
 		return null;
 	}
 
+	@Override
+	@Transactional
+	public boolean add(Category category) {
+		try {
+			// add the category in the database table
+			sessionFactory.getCurrentSession().persist(category);
 
+			return true;
+		} catch (Exception ex) {
+			ex.printStackTrace();
+			return false;
+		}
+	}
 
 }

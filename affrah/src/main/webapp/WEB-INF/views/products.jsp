@@ -65,7 +65,7 @@
 	<!-- page -->
 	<div class="services-breadcrumb">
 		<div class="agile_inner_breadcrumb">
-			<c:if test="${userClickProducts == true}">
+			<c:if test="${userClickProducts == true }">
 				<div class="container">
 					<ul class="w3_short">
 						<li>

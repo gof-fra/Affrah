@@ -30,6 +30,11 @@
 			window.scrollTo(0, 1);
 		}
 	</script>
+	        
+	<!-- Attribute each menu a title -->
+	<script>
+		window.menu = '${title}';
+	</script>
 	<!-- //Meta tag Keywords -->
 
 	<!-- Custom-Files -->
@@ -124,27 +129,27 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 		<%@ include file = "checkout.jsp" %>
 	</c:if>
 	
-	<c:if test="${userClickPayment == true}">
+	<c:if test="${userClickPayment == true }">
 		<%@ include file = "payment.jsp" %>
 	</c:if>
 	
-	<c:if test="${userClickSingle == true}">
+	<c:if test="${userClickSingle == true }">
 		<%@ include file = "single.jsp" %>
 	</c:if>
 	
-	<c:if test="${userClickHelp == true}">
+	<c:if test="${userClickHelp == true }">
 		<%@ include file = "help.jsp" %>
 	</c:if>
 	
-	<c:if test="${userClickFooter1 == true}">
+	<c:if test="${userClickFooter1 == true }">
 		<%@ include file = "products1.jsp" %>
 	</c:if>
 	
-	<c:if test="${userClickFooter2 == true}">
+	<c:if test="${userClickFooter2 == true }">
 		<%@ include file = "products2.jsp" %>
 	</c:if>
 	
-	<c:if test="${userClickFooter3 == true}">
+	<c:if test="${userClickFooter3 == true }">
 		<%@ include file = "products3.jsp" %>
 	</c:if>
 	
@@ -157,6 +162,8 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 	<!-- jquery -->
 	<script src="${js}/jquery-2.2.3.min.js"></script>
 	<!-- //jquery -->
+	
+	<script src="${js}/myapp.js"></script>
 
 	<!-- nav smooth scroll -->
 	<script>
@@ -204,7 +211,7 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 			var items = this.items(),
 				len = items.length,
 				total = 0,
-				i;
+			   	i;
 
 			// Count the number of each item in the cart
 			for (i = 0; i < len; i++) {
@@ -283,6 +290,8 @@ ga('create', 'UA-30027142-1', 'w3layouts.com');
 
 	<!-- for bootstrap working -->
 	<script src="${js}/bootstrap.js"></script>
+	
+	<script src="${js}/myapp.js"></script>
 	<!-- //for bootstrap working -->
 	<!-- //js-files -->
 </body>

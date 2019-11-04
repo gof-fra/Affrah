@@ -15,7 +15,7 @@
 <html lang="zxx">
 
 <head>
-	<title>Electro Store Ecommerce Category Bootstrap Responsive Web Template | Single Product 1 :: w3layouts</title>
+	<title></title>
 	<!-- Meta tag Keywords -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8" />
@@ -65,7 +65,7 @@
 	<!-- page -->
 	<div class="services-breadcrumb">
 		<div class="agile_inner_breadcrumb">
-			<c:if test="${userClickSingle == true}">
+			<c:if test="${userClickSingle == true }">
 				<div class="container">
 					<ul class="w3_short">
 						<li>

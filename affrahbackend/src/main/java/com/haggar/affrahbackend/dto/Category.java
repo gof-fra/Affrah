@@ -1,6 +1,10 @@
 package com.haggar.affrahbackend.dto;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 @Entity
 public class Category {
@@ -9,11 +13,22 @@ public class Category {
 	/******************
 	 * Private fields *
 	 ******************/
+	/*** we class product ***
+	 *** by category here ***/
 	
+	@Id
+	@Column(name = "Id", nullable = false)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
+	
 	private String name;
+	
 	private String description;
+	
+	@Column(name = "image_url", nullable = false)
 	private String imageUrl;
+	
+	@Column(name = "is_active", nullable = false)
 	private boolean active = true;
 	
 	
@@ -54,7 +69,6 @@ public class Category {
 	public String toString() {
 		return "Category [id=" + id + ", name=" + name + ", description=" + description + ", imageUrl=" + imageUrl
 				+ ", active=" + active + "]";
-	}
-	
+	}	
 
 }

@@ -40,13 +40,13 @@
 						<ul>
 							<li class="mb-3">
 								<img src="${images}/12.png" alt=" " class="img-fluid">
-								<i class="fas "></i>Av. Bourguiba, Tunisie</li>
+								<i class="fas "></i>Av. Moboutou, N'djamena</li>
 							<li class="mb-3">
 								<img src="${images}/11.png" alt=" " class="img-fluid">
-								<i class="fas "></i> +(216) 56 326 444</li>
+								<i class="fas "></i> +(235) 66 213 150</li>
 							<li class="mb-3">
 								<img src="${images}/10.png" alt=" " class="img-fluid">
-								<a href="mailto:example@mail.com"> mail 1@example.com</a>
+								<a href=""> dia_info@affra.com</a>
 							</li>
 						</ul>
 					</div>
@@ -98,7 +98,7 @@
 	<div class="copy-right py-3">
 		<div class="container">
 			<p class="text-center text-white">© 2019 Affrah Shop. All rights reserved | Design by
-				<a href="#"> digital-iTech-agency</a>
+				<a href="#"> Digital-iTech-agency</a>
 			</p>
 		</div>
 	</div>
