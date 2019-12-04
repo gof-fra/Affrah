@@ -240,7 +240,7 @@
 								<span class="sr-only">(current)</span>
 							</a>
 						</li>
-						<li class="nav-item dropdown mr-lg-2 mb-lg-0 mb-2">
+						<li class="nav-item dropdown mr-lg-2 mb-lg-0 mb-2" id="elect">
 							<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								Electronics
 							</a>
@@ -284,7 +284,7 @@
 								</div>
 							</div>
 						</li>
-						<li class="nav-item dropdown mr-lg-2 mb-lg-0 mb-2" id="">
+						<li class="nav-item dropdown mr-lg-2 mb-lg-0 mb-2" id="pages">
 							<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								Pages
 							</a>

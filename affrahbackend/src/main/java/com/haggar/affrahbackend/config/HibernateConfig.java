@@ -14,29 +14,34 @@ import org.springframework.orm.hibernate5.LocalSessionFactoryBuilder;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
-@ComponentScan(basePackages= {"com.haggar.affrahbackend.dto"})
+@ComponentScan(basePackages={"com.haggar.affrahbackend.dto"})
 @EnableTransactionManagement
 public class HibernateConfig {
 	
-	private static final String DATABASE_URL = "jdbc:mysql://localhost:3306/~/affrahDB";
-	private static final String DATABASE_DRIVER = "com.mysql.jdbc.Driver";
-	private static final String DATABASE_DIALECT = "org.hibernate.dialect.MySQLDialect";
-	private static final String DATABASE_USERNAME = "haggar";
-	private static final String DATABASE_PASSWORD = "haggar";
-	
+	private final static String DATABASE_URL = "jdbc:h2:tcp://localhost/~/affrahDB";
+	private final static String DATABASE_DRIVER = "org.h2.Driver";
+	private final static String DATABASE_DIALECT = "org.hibernate.dialect.H2Dialect";
+	private final static String DATABASE_USERNAME = "haggar";
+	private final static String DATABASE_PASSWORD = "";
+	// private final static String DATABASE_URL = "jdbc:h2:~/affrahDB";
+
 	
 	@Bean
 	public DataSource getDataSource() {
 		
 		BasicDataSource dataSource = new BasicDataSource();
 		
+		
 		dataSource.setDriverClassName(DATABASE_DRIVER);
 		dataSource.setUrl(DATABASE_URL);
 		dataSource.setUsername(DATABASE_USERNAME);
 		dataSource.setPassword(DATABASE_PASSWORD);
 		
+		
+		
 		return dataSource;
-	}   
+		
+	}
 	
 	@Bean
 	public SessionFactory getSessionFactory(DataSource dataSource) {
@@ -47,7 +52,6 @@ public class HibernateConfig {
 		builder.scanPackages("com.haggar.affrahbackend.dto");
 		
 		return builder.buildSessionFactory();
-		
 	}
 
 	private Properties getHibernateProperties() {
@@ -58,7 +62,6 @@ public class HibernateConfig {
 		properties.put("hibernate.show_sql", "true");
 		properties.put("hibernate.format_sql", "true");
 		
-		
 		return properties;
 	}
 	
@@ -68,7 +71,6 @@ public class HibernateConfig {
 		HibernateTransactionManager transactionManager = new HibernateTransactionManager(sessionFactory);
 		
 		return transactionManager;
-		
 	}
 
 }

@@ -86,8 +86,7 @@
 			<div class="row">
 				<div class="col-lg-6 welcome-left">
 					<h3>Welcome</h3>
-					<h4 class="my-sm-3 my-2">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4>
+					<h4 class="my-sm-3 my-2">About affrah shop.</h4>
 				</div>
 				<div class="col-lg-6 welcome-right-top mt-lg-0 mt-sm-5 mt-4">
 					<img src="${images}/ab.jpg" class="img-fluid" alt=" ">

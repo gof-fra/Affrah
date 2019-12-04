@@ -7,10 +7,7 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>affrah Maven Webapp</name>
   <url>http://maven.apache.org</url>
-  
-  <properties>
-  		<javaee.version>7.0</javaee.version>
-  </properties>
+
   
   <dependencies>
   	
@@ -25,7 +22,7 @@
 	<dependency>
 	    <groupId>javax</groupId>
 	    <artifactId>javaee-api</artifactId>
-	    <version>${javaee.version}</version>
+	    <version>7.0</version>
 	    <scope>provided</scope>
 	</dependency>
 		

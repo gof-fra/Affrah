@@ -9,27 +9,17 @@ import javax.persistence.Id;
 @Entity
 public class Category {
 	
-	
-	/******************
-	 * Private fields *
-	 ******************/
-	/*** we class product ***
-	 *** by category here ***/
-	
 	@Id
-	@Column(name = "Id", nullable = false)
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
-	
-	private String name;
-	
+	private  int id;
+	private String Name;
 	private String description;
 	
-	@Column(name = "image_url", nullable = false)
+	@Column(name = "image_url")
 	private String imageUrl;
 	
-	@Column(name = "is_active", nullable = false)
-	private boolean active = true;
+	@Column(name="is_active")
+	private boolean activate = true;
 	
 	
 	
@@ -40,10 +30,10 @@ public class Category {
 		this.id = id;
 	}
 	public String getName() {
-		return name;
+		return Name;
 	}
 	public void setName(String name) {
-		this.name = name;
+		Name = name;
 	}
 	public String getDescription() {
 		return description;
@@ -57,18 +47,21 @@ public class Category {
 	public void setImageUrl(String imageUrl) {
 		this.imageUrl = imageUrl;
 	}
-	public boolean isActive() {
-		return active;
+	public boolean isActivate() {
+		return activate;
 	}
-	public void setActive(boolean active) {
-		this.active = active;
+	public void setActivate(boolean activate) {
+		this.activate = activate;
 	}
 	
 	
 	@Override
 	public String toString() {
-		return "Category [id=" + id + ", name=" + name + ", description=" + description + ", imageUrl=" + imageUrl
-				+ ", active=" + active + "]";
-	}	
+		return "Category [id=" + id + ", Name=" + Name + ", description=" + description + ", imageUrl=" + imageUrl
+				+ ", activate=" + activate + "]";
+	}
+	
+	
+	
 
 }

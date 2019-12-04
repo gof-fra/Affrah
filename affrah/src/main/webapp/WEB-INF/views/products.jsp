@@ -43,6 +43,10 @@
 	<link href="${css}/menu.css" rel="stylesheet" type="text/css" media="all" />
 	<!-- menu style -->
 	<!-- //Custom-Files -->
+	
+	<!-- DataTable -->
+	
+
 
 	<!-- web fonts -->
 	<link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
@@ -65,7 +69,13 @@
 	<!-- page -->
 	<div class="services-breadcrumb">
 		<div class="agile_inner_breadcrumb">
+		
 			<c:if test="${userClickProducts == true }">
+			
+				<script>
+					window.categoryId = '';
+				</script>
+			
 				<div class="container">
 					<ul class="w3_short">
 						<li>
@@ -76,6 +86,26 @@
 							<i>|</i>
 						</li>
 						<li>All Products</li>
+					</ul>
+				</div>
+			</c:if>
+			
+			<c:if test="${userClickSingle == true }">
+			
+				<script>
+					window.categoryId = '${category.id}';
+				</script>
+			
+				<div class="container">
+					<ul class="w3_short">
+						<li>
+							<a href="${contextRoot}/home">Home</a>
+							<i>|</i>
+						</li>
+						<li>Electronics
+							<i>|</i>
+						</li>
+						<li>${category.name}</li>
 					</ul>
 				</div>
 			</c:if>
@@ -92,6 +122,12 @@
 				<span>&</span>
 				<span>C</span>omputers</h3>
 			<!-- //tittle heading -->
+			
+				
+							
+			
+	<div class="container">		
+			
 			<div class="row">
 				<!-- product left -->
 				<div class="agileinfo-ads-display col-lg-9">
@@ -628,10 +664,56 @@
 						<!-- //arrivals -->
 					</div>
 					<!-- //product right -->
+					
+				</div>
+				
+			</div>
+			<!-- dataTable -->
+			<br>
+			<div class="container">
+				<div class="row">				
+					<div class="agileinfo-ads-display col-lg-9">
+					<hr>
+					
+						<table id="productListTable" class="table table-striped table-bordered">
+						
+							<thead>
+								
+								<tr>
+									<th></th>
+									<th>Name</th>
+									<th>Brand</th>
+									<th>Price</th>
+									<th>Qty</th>
+									<th></th>
+									
+								</tr>
+								
+							</thead>
+							
+							<tfoot>
+								
+								<tr>
+									<th></th>
+									<th>Name</th>
+									<th>Brand</th>
+									<th>Price</th>
+									<th>Qty</th>
+									<th></th>
+									
+								</tr>
+								
+							</tfoot>
+						
+						</table>
+					<hr>
+					</div>
 				</div>
 			</div>
+					
 		</div>
 	</div>
+ </div>
 
 	<!-- footer -->
 	
@@ -765,6 +847,18 @@
 	<script src="${js}/bootstrap.js"></script>
 	<!-- //for bootstrap working -->
 	<!-- //js-files -->
+	
+	<!-- dataTable -->
+
+	
+	
+
+    <!-- Page-Level Demo Scripts - Tables - Use for reference -->
+    <script>
+    $(document).ready(function() {
+        $('#dataTables-example').dataTable();
+    });
+    </script>
 
 </body>
 
