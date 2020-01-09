@@ -14,7 +14,7 @@
 <html lang="zxx">
 
 <head>
-	<title>Affrah</title>
+	<title> Affrah Shop - ${title} </title>
 	<!-- Meta tag Keywords -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8" />
@@ -44,7 +44,8 @@
 	<!-- menu style -->
 	<!-- //Custom-Files -->
 	
-	<!-- DataTable -->
+	<!-- dataTables -->
+	<link href="${css}/dataTables.bootstrap4.css" rel="stylesheet" /> 
 	
 
 
@@ -91,7 +92,7 @@
 			</c:if>
 			
 			<c:if test="${userClickSingle == true }">
-			
+				
 				<script>
 					window.categoryId = '${category.id}';
 				</script>
@@ -669,8 +670,20 @@
 				
 			</div>
 			<!-- dataTable -->
+			
+			<!-- dataTable images -->
+			<style>
+				
+					.dataTableImg {
+							with: 50px;
+							height: 50px;
+						}
+			</style>
+			
+			
 			<br>
-			<div class="container">
+			<!--<div class="container">
+			
 				<div class="row">				
 					<div class="agileinfo-ads-display col-lg-9">
 					<hr>
@@ -680,12 +693,12 @@
 							<thead>
 								
 								<tr>
-									<th></th>
+									
+									
 									<th>Name</th>
 									<th>Brand</th>
-									<th>Price</th>
+									<th>UnitPrice</th>
 									<th>Qty</th>
-									<th></th>
 									
 								</tr>
 								
@@ -694,12 +707,10 @@
 							<tfoot>
 								
 								<tr>
-									<th></th>
 									<th>Name</th>
 									<th>Brand</th>
-									<th>Price</th>
+									<th>UnitPrice</th>
 									<th>Qty</th>
-									<th></th>
 									
 								</tr>
 								
@@ -709,6 +720,51 @@
 					<hr>
 					</div>
 				</div>
+			</div> -->
+			
+			<div class="container">
+				<div class="row">
+					<div class="agileinfo-ads-display col-lg-9">
+				
+						<hr>
+						<table id="productListTable" class="table table-striped table-borderd">
+						
+							<thead>
+									
+								<tr>
+									
+									<th> </th>
+									<th>Name </th>
+									<th>Brand </th>
+									<th>Price </th>
+									<th>Qty </th>
+									<th> </th>
+								
+								</tr>
+							
+							</thead>
+							
+							<tfoot>
+								
+								<tr>
+									
+									<th> </th>
+									<th>Name </th>
+									<th>Brand </th>
+									<th>Price </th>
+									<th>Qty </th>
+									<th> </th>
+								
+								</tr>
+							
+							</tfoot>
+						
+						</table>
+						<hr>
+				
+			</div>
+			</div>
+			
 			</div>
 					
 		</div>
@@ -721,7 +777,7 @@
 
 	<!-- js-files -->
 	<!-- jquery -->
-	<script src="${js}/jquery-2.2.3.min.js"></script>
+	<script src="${js}/jquery-2.2.3.min.js"></script> 
 	<!-- //jquery -->
 
 	<!-- nav smooth scroll -->
@@ -848,7 +904,9 @@
 	<!-- //for bootstrap working -->
 	<!-- //js-files -->
 	
-	<!-- dataTable -->
+	<!-- DataTable -->
+	<script src="${js}/dataTables.bootstrap4.js"></script> 
+	<script src="${js}/jquery.dataTables.js"></script>
 
 	
 	

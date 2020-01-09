@@ -14,7 +14,7 @@
    
    ">
    
-   <context:component-scan base-package="com.haggar.affrah.controller" />
+   <context:component-scan base-package="com.haggar.affrah" /> <!-- controller -->
    <context:component-scan base-package="com.haggar.affrahbackend" /> <!-- .impl -->
   			
    <bean id="viewResolver"
@@ -24,6 +24,10 @@
    		<property name="suffix" value=".jsp" />
    
    </bean>	
+   
+   <!-- file -->
+   <bean id="multipartResolver"
+   		class="org.springframework.web.multipart.support.StandardServletMultipartResolver"/>
    
    <!-- load static file -->
    <mvc:annotation-driven />

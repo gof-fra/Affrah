@@ -289,13 +289,17 @@
 								Pages
 							</a>
 							<div class="dropdown-menu">
+								<div class="dropdown-divider"></div>
 								<a class="dropdown-item" href="${contextRoot}/show/all/products" id="products">Product</a>
 								<div class="dropdown-divider"></div>
 								<a class="dropdown-item" href="${contextRoot}/single" id="single">Single Product</a>
 								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="${contextRoot}/checkout" id="checkout">Checkout Page</a>
+								<a class="dropdown-item" href="${contextRoot}/checkout" id="checkout">Checkout</a>
 								<div class="dropdown-divider"></div>
 								<a class="dropdown-item" href="${contextRoot}/payment" id="payment">Payment Page</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="${contextRoot}/manage/products" id="manageProducts">Manage</a>
+								<div class="dropdown-divider"></div>
 							</div>
 						</li>
 						<li class="nav-item mr-lg-2 mb-lg-0 mb-2" id="">

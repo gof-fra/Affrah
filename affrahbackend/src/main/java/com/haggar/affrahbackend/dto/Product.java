@@ -35,8 +35,10 @@ public class Product {
 	private int supplierId;
 	private int purchases;
 	private int views;
-	
-	
+
+
+
+
 	public Product() {
 		
 		this.code = "PRD" + UUID.randomUUID().toString().substring(26).toUpperCase();
@@ -117,7 +119,15 @@ public class Product {
 	public void setViews(int views) {
 		this.views = views;
 	}
-	
-	
 
+
+
+	@Override
+	public String toString() {
+		return "Product [id=" + id + ", code=" + code + ", name=" + name + ", brand=" + brand + ", description="
+				+ description + ", unitPrice=" + unitPrice + ", quantity=" + quantity + ", activate=" + activate
+				+ ", categoryId=" + categoryId + ", supplierId=" + supplierId + ", purchases=" + purchases + ", views="
+				+ views + "]";
+	}
+	
 }

@@ -1,11 +1,13 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="sf" uri="http://www.springframework.org/tags/form" %>
+	
 
 <spring:url var="css" value="/resources/css" />
 <spring:url var="js" value="/resources/js" />
 <spring:url var="images" value="/resources/images" />
+
 
 <c:set var="contextRoot" value="${pageContext.request.contextPath}" />
 
@@ -13,7 +15,7 @@
 <html lang="zxx">
 
 <head>
-	<title> Affrah Shop - ${title} </title>
+	<title>Affrah</title>
 	<!-- Meta tag Keywords -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8" />
@@ -53,10 +55,11 @@
 
 <body>
 	<!-- top-header -->
+	<!-- //navigation -->
 
 	<!-- banner-2 -->
 	<div class="page-head_agile_info_w3l">
-		<!-- watch & phone -->
+
 	</div>
 	<!-- //banner-2 -->
 	<!-- page -->
@@ -68,95 +71,118 @@
 						<a href="${contextRoot}/home">Home</a>
 						<i>|</i>
 					</li>
-					<li>Contact Us</li>
+					<li>Manage</li>
 				</ul>
 			</div>
 		</div>
 	</div>
-	<!-- //page -->
-
-	<!-- contact -->
-	<div class="contact py-sm-5 py-4">
-		<div class="container py-xl-4 py-lg-2">
-			<!-- tittle heading -->
-			<h3 class="tittle-w3l text-center mb-lg-5 mb-sm-4 mb-3">
-				<span>C</span>ontact
-				<span>U</span>s
-			</h3>
-			<!-- //tittle heading -->
-			<div class="row contact-grids agile-1 mb-5">
-				<div class="col-sm-4 contact-grid agileinfo-6 mt-sm-0 mt-2">
-					<div class="contact-grid1 text-center">
-						<div class="con-ic">
-							<i class="fas rounded-circle">
-								<img src="${images}/12.png" alt=" " class="img-fluid">
-							</i>
-						</div>
-						<h4 class="font-weight-bold mt-sm-4 mt-3 mb-3">Address</h4>
-						<p>1PO Box 8568954 Av. Moboutou
-							<label>N'djamena.</label>
-						</p>
-					</div>
+	<br>
+	<div class="container">
+		
+		<c:if test="${not empty message}">
+			<div class="col-xs-12">
+				<div class="alert alert-success alert-dismissible">
+					<button type="button" class="close" data-dismiss="alert">&times;</button>
+					${message}
 				</div>
-				<div class="col-sm-4 contact-grid agileinfo-6 my-sm-0 my-4">
-					<div class="contact-grid1 text-center">
-						<div class="con-ic">
-							<i class="fas rounded-circle">
-								<img src="${images}/11.png" alt=" " class="img-fluid">
-							</i>
-						</div>
-						<h4 class="font-weight-bold mt-sm-4 mt-3 mb-3">Call Us</h4>
-						<p>
-							<label>+(235) 66 21 31 50</label>
-						</p>
+			</div>
+		</c:if>
+		
+		
+		<div class="row">
+			<div class="col-md-offset-2 col-md-8">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h4>Product Manage</h4>
 					</div>
-				</div>
-				<div class="col-sm-4 contact-grid agileinfo-6">
-					<div class="contact-grid1 text-center">
-						<div class="con-ic">
-						<i class="fas rounded-circle">
-							<img src="${images}/10.png" alt=" " class="img-fluid">
-						</i>
-						</div>
-						<h4 class="font-weight-bold mt-sm-4 mt-3 mb-3">Email</h4>
-						<p>
-							<a href="">dia_info@gmail.com</a>
-						</p>
+					
+					<div class="panel-body">
+						<sf:form class="form-horizontal" modelAttribute="product"
+							action="${contextRoot}/manage/products"
+							method="POST"
+							enctype="multipart/form-data"
+						>
+						
+							<div class="form-group">
+								<label class="control-label col-md-4" for="name">Enter Product Name</label>
+								<div class="col-md-8">
+									<sf:input type="text" path="name" id="name" placeholder="Product Name" class="form-control" />
+									<sf:errors path="name" cssClass="help-block" element="em" />
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label class="control-label col-md-4" for="name">Enter Brand Name</label>
+								<div class="col-md-8">
+									<sf:input type="text" path="brand" id="brand" placeholder="Brand Name" class="form-control" />
+									<sf:errors path="brand" cssClass="help-block" element="em" />
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label class="control-label col-md-4" for="description"> Product Description: </label>
+									<div class="col-md-8">
+										<sf:textarea path="description" id="description" rows="4" placeholder="Write some description" class="form-control" />
+										<sf:errors path="description" cssClass="help-block" element="em" />
+									</div>
+							</div>
+																			
+							<div class="form-group">						
+								<label class="control-label col-md-4" for="unitPrice"> Enter Unit Price: </label>						
+								 <div class="col-md-8">							
+									<sf:input type="number" path="unitPrice" id="unitPrice" placeholder="Write price" class="form-control"/>
+								 	<sf:errors path="unitPrice" cssClass="help-block" element="em" />
+								 </div>
+							</div>
+																					
+							<div class="form-group">						
+								<label class="control-label col-md-4" for="quantity"> Quantity: </label>								
+								<div class="col-md-8">									
+									<sf:input type="number" path="quantity" id="quantity" placeholder="Write quantity" class="form-control"/>									
+								</div>
+							</div>
+							
+							<div class="form-group">						
+								<label class="control-label col-md-4" for="file"> Select Image: </label>								
+								<div class="col-md-8">									
+									<sf:input type="file" path="file" id="file" class="form-control"/>	
+									<sf:errors path="file" cssClass="help-block" element="em" />								
+								</div>
+							</div>
+							
+							<div class="form-group">		
+								<label class="control-label col-md-4" for="categoryId"> Select Category: </label>								
+								<div class="col-md-8">									
+									<sf:select class="form-control" id="categoryId" path="categoryId"
+										items="${categories}"
+										itemLabel="name"
+										itemValue="id"	
+									/>																																	
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<div class="col-md-offset-4 col-md-8">
+									<input type="submit" name="submit" id="submit" value="submit" class="btn btn-primary" />
+									<sf:hidden path="id"/>
+									<sf:hidden path="code"/>
+									<sf:hidden path="supplierId"/>
+									<sf:hidden path="activate"/>
+									<sf:hidden path="purchases"/>
+									<sf:hidden path="views"/>
+								</div>
+							</div>
+												
+						</sf:form>
 					</div>
 				</div>
 			</div>
-			<!-- form -->
-			<form action="#" method="post">
-				<div class="contact-grids1 w3agile-6">
-					<div class="row">
-						<div class="col-md-6 col-sm-6 contact-form1 form-group">
-							<label class="col-form-label">Name</label>
-							<input type="text" class="form-control" name="Name" placeholder="" required="">
-						</div>
-						<div class="col-md-6 col-sm-6 contact-form1 form-group">
-							<label class="col-form-label">E-mail</label>
-							<input type="email" class="form-control" name="Email" placeholder="" required="">
-						</div>
-					</div>
-					<div class="contact-me animated wow slideInUp form-group">
-						<label class="col-form-label">Message</label>
-						<textarea name="Message" class="form-control" placeholder="" required=""> </textarea>
-					</div>
-					<div class="contact-form">
-						<input type="submit" value="Submit">
-					</div>
-				</div>
-			</form>
-			<!-- //form -->
 		</div>
-	</div>
-	<!-- //contact -->
-
-	<!-- map -->
-	<!--<div class="map mt-sm-0 mt-4">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d805196.5077734194!2d144.49270863101745!3d-37.97015423820711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad646b5d2ba4df7%3A0x4045675218ccd90!2sMelbourne+VIC%2C+Australia!5e0!3m2!1sen!2sin!4v1474020956974"
-		    allowfullscreen></iframe>
-	</div> -->
+	</div><br>
+	
+	
+	<!-- //checkout page -->
+		<!-- footer third section -->
 	<!-- //copyright -->
 
 	<!-- js-files -->
@@ -243,6 +269,50 @@
 		}
 	</script>
 	<!-- //password-script -->
+
+	<!-- quantity -->
+	<script>
+		$('.value-plus').on('click', function () {
+			var divUpd = $(this).parent().find('.value'),
+				newVal = parseInt(divUpd.text(), 10) + 1;
+			divUpd.text(newVal);
+		});
+
+		$('.value-minus').on('click', function () {
+			var divUpd = $(this).parent().find('.value'),
+				newVal = parseInt(divUpd.text(), 10) - 1;
+			if (newVal >= 1) divUpd.text(newVal);
+		});
+	</script>
+	<!--quantity-->
+	<script>
+		$(document).ready(function (c) {
+			$('.close1').on('click', function (c) {
+				$('.rem1').fadeOut('slow', function (c) {
+					$('.rem1').remove();
+				});
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function (c) {
+			$('.close2').on('click', function (c) {
+				$('.rem2').fadeOut('slow', function (c) {
+					$('.rem2').remove();
+				});
+			});
+		});
+	</script>
+	<script>
+		$(document).ready(function (c) {
+			$('.close3').on('click', function (c) {
+				$('.rem3').fadeOut('slow', function (c) {
+					$('.rem3').remove();
+				});
+			});
+		});
+	</script>
+	<!-- //quantity -->
 
 	<!-- smoothscroll -->
 	<script src="${js}/SmoothScroll.min.js"></script>

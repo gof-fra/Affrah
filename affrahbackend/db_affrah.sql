@@ -18,7 +18,7 @@ INSERT INTO category (name, description, image_url, is_active) VALUES ('Televisi
 INSERT INTO category (name, description, image_url, is_active) VALUES ('Mobile', 'This is the description for mobile category!', 'Cat_3.png', true);
 
 -- user  -> user_detail
-CREATE TABLE user (
+CREATE TABLE user_detail (
 		id IDENTITY,
         first_name VARCHAR(50),
         last_name VARCHAR(50),

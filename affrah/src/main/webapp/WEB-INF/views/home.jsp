@@ -17,13 +17,13 @@
 <head>
 	<title> Affrah Shop - ${title} </title>
 	<!-- Attribute each menu a title -->
-	<script>
-		window.menu = '${title}';
-	</script>
 	
 	<script>
-		window.contextRoot = '${contextRoot}';
+		window.menu = '${title}';
+		
+		window.contextRoot = '${contextRoot}'
 	</script>
+
 	
 	<!-- Meta tag Keywords -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -129,8 +129,11 @@
 			<%@ include file = "contact.jsp" %>
 		</c:if>
 		
-		<c:if test="${userClickProducts == true }">
+		<c:if test="${userClickProducts == true or userClickCategoryProducts == true }">
 			<%@ include file = "products.jsp" %>
+				<script>
+					window.categoryId = '';
+				</script> 
 		</c:if>
 		
 		<c:if test="${userClickCheckout == true }">
@@ -141,8 +144,11 @@
 			<%@ include file = "payment.jsp" %>
 		</c:if>
 		
-		<c:if test="${userClickSingle == true }">
+		<c:if test="${userClickSingle == true or userClickShowProduct == true}">
 			<%@ include file = "single.jsp" %>
+				<script>
+					window.categoryId = '${category.id}';
+				</script> 
 		</c:if>
 		
 		<c:if test="${userClickHelp == true }">
@@ -159,6 +165,10 @@
 		
 		<c:if test="${userClickFooter3 == true }">
 			<%@ include file = "products3.jsp" %>
+		</c:if>
+		
+		<c:if test="${userClickManageProducts == true }">
+			<%@ include file = "manageProducts.jsp" %>
 		</c:if>
 		
 		

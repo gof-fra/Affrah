@@ -34,7 +34,7 @@ public class ProductDAOImpl implements ProductDAO {
 		return null;
 	}
 	
-	// List
+	// List \\
 	@Override
 	public List<Product> list() {
 		return sessionFactory
@@ -45,7 +45,7 @@ public class ProductDAOImpl implements ProductDAO {
 	}
 
 	
-	//Insert
+	//Insert\\
 	@Override
 	public boolean add(Product product) {
 		try {
@@ -64,7 +64,7 @@ public class ProductDAOImpl implements ProductDAO {
 		return false;
 	}
 	
-	//Update
+	//Update\\
 	@Override
 	public boolean update(Product product) {
 		try {
@@ -84,7 +84,7 @@ public class ProductDAOImpl implements ProductDAO {
 	}
 	
 	
-	//Delete
+	//Delete\\
 	@Override
 	public boolean delete(Product product) {
 		try {
